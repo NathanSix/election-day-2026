@@ -9,287 +9,409 @@
 <meta property="og:description" content="Georgia's statewide races and amendments, control of Congress and 12 key Senate races for the Nov. 3, 2026 midterms, with AP race calls.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nathansix.github.io/election-day-2026/">
-<meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='12' width='24' height='16' rx='3' fill='%232f6bd9'/%3E%3Crect x='9' y='4' width='14' height='12' rx='1.5' fill='%23ffffff' stroke='%23d1443a' stroke-width='2'/%3E%3Crect x='8' y='14' width='16' height='3' rx='1.5' fill='%231b1a18'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#f3f5fb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23312e81'/%3E%3Cstop offset='.55' stop-color='%236d28d9'/%3E%3Cstop offset='1' stop-color='%23db2777'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Crect x='9' y='6' width='14' height='11' rx='2' fill='%23fff'/%3E%3Crect x='6' y='15' width='20' height='11' rx='3' fill='%23fff' fill-opacity='.9'/%3E%3Crect x='11' y='15' width='10' height='2.5' rx='1.25' fill='%236d28d9'/%3E%3C/svg%3E">
 <style>
 :root {
-  --color-fg: #1f1e1c; --color-fg-muted: #66625b; --color-bg: #f7f6f3; --color-panel: #ffffff; --color-border-line: #e3e0da;
-  --color-ok: #1f7a4d; --color-warn: #9a5600; --color-bad: #c0392b;
-  --cds-chart-grid: #ebe8e2; --cds-chart-muted: #b9b5ad;
-  --cds-font-size-caption: 0.8125rem; --cds-font-size-body: 1rem; --cds-font-size-heading: 1.25rem; --cds-font-size-title: 2rem;
-  --cds-font-weight-medium: 600;
-  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 12px; --cds-gap-lg: 20px; --cds-gap-xl: 32px;
-  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 16px;
-  --cds-radius: 8px; --cds-dur-slow: 400ms;
+  --color-fg: #111827; --color-fg-muted: #5b6475; --color-bg: #f3f5fb; --color-panel: #ffffff; --color-border-line: #e2e6ef;
+  --color-ok: #15803d; --color-warn: #b45309; --color-bad: #dc2626;
+  --cds-chart-grid: #e7eaf2; --cds-chart-muted: #b4bccb;
+  --cds-font-size-caption: 0.8125rem; --cds-font-size-body: 1rem; --cds-font-size-heading: 1.25rem; --cds-font-size-title: 2.1rem;
+  --cds-dur-slow: 400ms;
   --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-serif: Georgia, "Times New Roman", serif;
   color-scheme: light dark;
 }
-@media (prefers-color-scheme: dark) { :root {
-  --color-fg: #ecebe8; --color-fg-muted: #aaa69e; --color-bg: #1b1a18; --color-panel: #252421; --color-border-line: #3a3833;
-  --color-ok: #5cc28f; --color-warn: #e0a54a; --color-bad: #ef6b5b;
-  --cds-chart-grid: #35332f; --cds-chart-muted: #6e6a63; } }
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-fg: #e8ecf5; --color-fg-muted: #a3acc0; --color-bg: #0b1020; --color-panel: #141b2f; --color-border-line: #263049;
+    --color-ok: #4ade80; --color-warn: #fbbf24; --color-bad: #f87171;
+    --cds-chart-grid: #222b42; --cds-chart-muted: #56627c;
+  }
+}
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--color-bg); color: var(--color-fg); line-height: 1.45; }
-.wrap { padding: 16px max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left)); }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); }
+.wrap { padding: 14px max(14px, env(safe-area-inset-right)) 48px max(14px, env(safe-area-inset-left)); }
 .dash-skeleton { color: transparent !important; position: relative; min-height: 1.3em; }
-.dash-skeleton::after { content: ""; position: absolute; left: 0; top: 0.25em; width: 45%; height: 0.8em; border-radius: 4px; background: var(--color-border-line); }
-@media (prefers-reduced-motion: no-preference) { .dash-skeleton::after { animation: ed-pulse 1.1s ease-in-out infinite alternate; } }
-@keyframes ed-pulse { from { opacity: .45; } to { opacity: 1; } }
+.dash-skeleton::after { content: ""; position: absolute; left: 0; top: .25em; width: 45%; height: .8em; border-radius: 6px; background: var(--color-border-line); }
+.ed-hero .dash-skeleton::after { background: rgba(255, 255, 255, .25); }
+@media (prefers-reduced-motion: no-preference) { .dash-skeleton::after { animation: ed-shimmer 1.1s ease-in-out infinite alternate; } }
+@keyframes ed-shimmer { from { opacity: .45; } to { opacity: 1; } }
 
 
-  .ed { --ed-d: #2f6bd9; --ed-r: #d1443a; --ed-i: #8a62c8; --ed-o: #7d838c; --ed-yes: #3f7f8f; --ed-no: #94783f;
-    font-family: var(--font-sans); color: var(--color-fg); max-width: 68rem; margin-inline: auto; font-size: var(--cds-font-size-body); }
-  .ed-head { padding-block: var(--cds-pad-md) var(--cds-pad-sm); }
-  .ed-title { font-family: var(--font-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.15; margin: 0; }
-  .ed-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: var(--cds-gap-xs) 0 0; }
-  .ed-headline { font-size: var(--cds-font-size-heading); line-height: 1.35; margin: var(--cds-gap-md) 0 var(--cds-gap-sm); max-width: 46rem; }
-  .ed-polls { margin: 0 0 var(--cds-gap-xs); font-weight: var(--cds-font-weight-medium); }
-  .ed-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs) var(--cds-gap-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .ed-asof.is-stale { color: var(--color-warn); }
-  .ed-btn { font: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
-  .ed-nav { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); margin-top: var(--cds-gap-md); }
-  .ed-sec { margin-top: var(--cds-gap-xl); scroll-margin-top: var(--cds-gap-md); }
-  .ed-sec > h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
-  .ed-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-md); max-width: 46rem; }
-  .ed-subhead { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-lg) 0 var(--cds-gap-sm); }
-  .ed-grid2 { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
-  .ed-grid3 { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
-  .ed-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
-  .ed-cardhead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--cds-gap-xs) var(--cds-gap-sm); margin-bottom: var(--cds-gap-sm); }
-  .ed-card h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0; }
-  .ed-tag { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .ed-desc { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-sm); }
-  .ed-race { min-height: 4.5rem; }
-  .ed-cands { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--cds-gap-sm); }
-  .ed-ctop { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs); }
-  .ed-name { font-weight: var(--cds-font-weight-medium); overflow-wrap: anywhere; }
-  .ed-inc { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .ed-check { color: var(--color-ok); font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); }
-  .ed-pct { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
-  .ed-big .ed-pct { font-family: var(--font-serif); font-weight: 400; font-size: var(--cds-font-size-heading); }
-  .ed-chip { display: inline-grid; place-items: center; min-width: 1.25rem; height: 1.25rem; padding: 0 0.25rem; border-radius: var(--cds-radius); color: #fff; font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); line-height: 1; }
-  .ed-p-d { background: var(--ed-d); } .ed-p-r { background: var(--ed-r); } .ed-p-i { background: var(--ed-i); } .ed-p-o { background: var(--ed-o); }
-  .ed-vbar, .ed-bar { position: relative; display: flex; height: 0.5rem; margin-top: var(--cds-gap-xs); border-radius: var(--cds-radius); background: var(--cds-chart-grid); overflow: hidden; }
-  .ed-bar { height: 0.75rem; }
-  .ed-vbar > i, .ed-bar > i.ed-seg { display: block; height: 100%; }
-  .ed-f-d { background: var(--ed-d); } .ed-f-r { background: var(--ed-r); } .ed-f-i { background: var(--ed-i); } .ed-f-o { background: var(--ed-o); }
-  .ed-f-g { background: var(--cds-chart-muted); } .ed-f-yes { background: var(--ed-yes); } .ed-f-no { background: var(--ed-no); }
-  .ed-mid { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--color-fg); opacity: .55; }
-  .ed-vline { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; margin-top: 2px; }
-  .ed-status { margin: var(--cds-gap-sm) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .ed-status.ed-s-called { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
-  .ed-src { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .ed a, .ed .ed-a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
-  .ed-crow { margin-top: var(--cds-gap-sm); }
-  .ed-clabel { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .ed-cnums { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs) var(--cds-gap-md); margin-top: 2px; font-variant-numeric: tabular-nums; }
-  .ed-cnum { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
-  .ed .ed-cnum b { font-family: var(--font-serif); font-weight: 400; font-size: var(--cds-font-size-heading); }
-  .ed-ctag { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .ed-control { margin: var(--cds-gap-sm) 0 0; font-weight: var(--cds-font-weight-medium); }
-  .ed-muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 2px 0 0; }
-  .ed-fine { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: var(--cds-gap-sm) 0 0; }
-  .ed .ed-maj b { font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
-  .ed-feed { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--cds-gap-sm); min-height: 3rem; }
-  .ed-item { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); }
-  .ed-when { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
-  .ed-text { margin: 2px 0 0; }
-  .ed-links { margin: 0; padding-left: 1.1rem; display: grid; gap: var(--cds-gap-xs); }
-  .ed-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: 2rem; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
-  .ed-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
-  .ed [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.ed { --ed-d: #2563eb; --ed-r: #dc2626; --ed-i: #7c3aed; --ed-o: #64748b; --ed-yes: #0d9488; --ed-no: #d97706; --ed-called: #16a34a; --ed-live: #db2777; --ed-wait: #94a3b8; --ed-a: #312e81; --ed-b: #6d28d9; --ed-c: #db2777; --ed-rad: 14px;
+  font-family: var(--font-sans); color: var(--color-fg); max-width: 68rem; margin-inline: auto; font-size: var(--cds-font-size-body); line-height: 1.45; }
+.ed-hero { position: relative; overflow: hidden; border-radius: var(--ed-rad); padding: 18px 18px 16px; color: #fff; background: linear-gradient(135deg, var(--ed-a) 0%, var(--ed-b) 55%, var(--ed-c) 100%); box-shadow: 0 14px 34px -18px rgba(109, 40, 217, .75); }
+.ed-hero::after { content: ''; position: absolute; right: -70px; top: -70px; width: 220px; height: 220px; border-radius: 50%; background: radial-gradient(circle, rgba(255, 255, 255, .22), rgba(255, 255, 255, 0) 70%); pointer-events: none; }
+.ed-kicker { display: inline-flex; align-items: center; gap: 6px; font-size: var(--cds-font-size-caption); font-weight: 700; letter-spacing: .05em; text-transform: uppercase; background: rgba(255, 255, 255, .16); padding: 4px 10px; border-radius: 999px; }
+.ed-title { font-family: var(--font-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.1; margin: 10px 0 2px; }
+.ed-sub { margin: 0; opacity: .88; font-size: var(--cds-font-size-caption); }
+.ed-headline { font-size: var(--cds-font-size-heading); line-height: 1.35; margin: 14px 0 8px; max-width: 46rem; }
+.ed-hero .dash-skeleton { color: transparent; }
+.ed-polls { margin: 0 0 12px; font-weight: 700; }
+.ed-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; font-size: var(--cds-font-size-caption); }
+.ed-fresh { display: inline-flex; align-items: center; gap: 7px; background: rgba(255, 255, 255, .15); padding: 6px 11px; border-radius: 999px; }
+.ed-pulse { width: 8px; height: 8px; border-radius: 50%; background: #4ade80; flex: none; }
+.ed-fresh.is-stale .ed-pulse { background: #fbbf24; }
+.ed-hbtn { font: inherit; font-size: var(--cds-font-size-caption); font-weight: 700; color: #1e1b4b; background: #fff; border: 0; border-radius: 999px; padding: 7px 14px; cursor: pointer; transition: transform .15s ease, box-shadow .15s ease, background .2s ease; }
+.ed-hbtn:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(0, 0, 0, .22); }
+.ed-hbtn:active { transform: scale(.96); }
+.ed-hbtn.ghost { background: rgba(255, 255, 255, .16); color: #fff; }
+.ed-hbtn.is-spinning::before { content: '⟳ '; display: inline-block; }
+
+.ed-help { margin-top: 14px; border-radius: var(--ed-rad); background: var(--color-panel); border: 2px solid color-mix(in srgb, var(--ed-b) 45%, var(--color-border-line)); padding: 16px; }
+.ed-help-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 6px; }
+.ed-help-head h2 { margin: 0; font-size: var(--cds-font-size-heading); }
+.ed-x { font: inherit; font-size: 1.25rem; line-height: 1; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--color-border-line); background: transparent; color: var(--color-fg); cursor: pointer; }
+.ed-help-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); }
+.ed-help-item { display: grid; grid-template-columns: 30px 1fr; gap: 4px 10px; align-items: start; }
+.ed-help-item h3 { margin: 4px 0 0; font-size: var(--cds-font-size-body); }
+.ed-help-item p { grid-column: 2; margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ed-num { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-weight: 700; font-size: var(--cds-font-size-caption); background: linear-gradient(135deg, var(--ed-b), var(--ed-c)); }
+.ed-gotit { margin-top: 14px; color: #fff; background: linear-gradient(135deg, var(--ed-b), var(--ed-c)); }
+
+.ed-nav { position: sticky; top: 0; z-index: 5; display: flex; gap: 8px; overflow-x: auto; padding: 12px 2px 10px; margin: 6px -2px 0; scrollbar-width: none; background: linear-gradient(var(--color-bg) 75%, transparent); }
+.ed-nav::-webkit-scrollbar { display: none; }
+.ed-chipbtn, .ed-fbtn { flex: none; font: inherit; font-size: var(--cds-font-size-caption); font-weight: 700; color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: 999px; padding: 7px 13px; cursor: pointer; transition: background .2s ease, color .2s ease, border-color .2s ease, transform .15s ease; }
+.ed-chipbtn:active, .ed-fbtn:active { transform: scale(.95); }
+.ed-chipbtn.is-on, .ed-fbtn.is-on { background: var(--ed-live); border-color: var(--ed-live); color: #fff; }
+.ed-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 2px 0 0; }
+.ed-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.ed-sw { width: 14px; height: 8px; border-radius: 999px; display: inline-block; }
+.ed-k { width: 9px; height: 9px; border-radius: 50%; display: inline-block; }
+.ed-k.called { background: var(--ed-called); } .ed-k.counting { background: var(--ed-live); } .ed-k.waiting { background: var(--ed-wait); }
+
+.ed-sec { margin-top: 28px; scroll-margin-top: 64px; }
+.ed-sec > h2 { display: flex; align-items: center; gap: 10px; font-size: var(--cds-font-size-heading); font-weight: 700; margin: 0 0 6px; }
+.ed-sec > h2::before { content: ''; width: 8px; height: 22px; border-radius: 6px; background: linear-gradient(var(--ed-b), var(--ed-c)); flex: none; }
+.ed-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 12px; max-width: 46rem; }
+.ed-subhead { font-size: var(--cds-font-size-body); font-weight: 700; margin: 22px 0 10px; }
+.ed-filters { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+.ed-grid2 { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
+.ed-grid3 { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+.ed-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--ed-rad); padding: 16px; min-width: 0; box-shadow: 0 1px 2px rgba(15, 23, 42, .05), 0 8px 20px -14px rgba(15, 23, 42, .35); transition: transform .2s ease, box-shadow .2s ease, border-color .3s ease; }
+@media (hover: hover) { .ed-card:hover { transform: translateY(-2px); box-shadow: 0 2px 4px rgba(15, 23, 42, .06), 0 16px 30px -16px rgba(15, 23, 42, .45); } }
+.ed-card:has([data-status=called]) { border-color: color-mix(in srgb, var(--ed-called) 55%, var(--color-border-line)); }
+.ed-card:has([data-status=counting]) { border-color: color-mix(in srgb, var(--ed-live) 40%, var(--color-border-line)); }
+.ed-cardhead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 10px; margin-bottom: 10px; }
+.ed-card h3 { font-size: var(--cds-font-size-body); font-weight: 700; margin: 0; }
+.ed-tag { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ed-desc { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 10px; }
+.ed-body { min-height: 4.5rem; }
+.ed-filterable.f-called .ed-card:not(:has([data-status=called])), .ed-filterable.f-counting .ed-card:not(:has([data-status=counting])), .ed-filterable.f-waiting .ed-card:not(:has([data-status=waiting])) { display: none; }
+.ed-empty { display: none; grid-column: 1 / -1; margin: 0; padding: 18px; text-align: center; border: 1px dashed var(--color-border-line); border-radius: var(--ed-rad); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ed-filterable.f-called:not(:has([data-status=called])) [data-empty=called], .ed-filterable.f-counting:not(:has([data-status=counting])) [data-empty=counting], .ed-filterable.f-waiting:not(:has([data-status=waiting])) [data-empty=waiting] { display: block; }
+
+.ed-cands { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.ed-ctop { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.ed-name { font-weight: 700; overflow-wrap: anywhere; }
+.ed-inc { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ed-win { display: inline-flex; align-items: center; gap: 4px; font-size: var(--cds-font-size-caption); font-weight: 700; padding: 2px 8px; border-radius: 999px; color: #fff; background: var(--ed-called); }
+.ed-pct { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 700; }
+.ed-big .ed-pct { font-family: var(--font-serif); font-weight: 400; font-size: var(--cds-font-size-heading); }
+.ed-chip { display: inline-grid; place-items: center; min-width: 1.35rem; height: 1.35rem; padding: 0 .3rem; border-radius: 7px; color: #fff; font-size: var(--cds-font-size-caption); font-weight: 800; font-style: normal; line-height: 1; }
+.ed-p-d { background: var(--ed-d); } .ed-p-r { background: var(--ed-r); } .ed-p-i { background: var(--ed-i); } .ed-p-o { background: var(--ed-o); }
+.ed-vbar, .ed-bar, .ed-prog { position: relative; display: flex; overflow: hidden; border-radius: 999px; background: var(--cds-chart-grid); }
+.ed-vbar { height: 10px; margin-top: 6px; }
+.ed-bar { height: 14px; margin-top: 6px; }
+.ed-prog { height: 5px; margin-top: 6px; }
+.ed-vbar > i, .ed-bar > i, .ed-prog > i { display: block; height: 100%; flex: none; transition: width .9s cubic-bezier(.2, .8, .2, 1); }
+.ed-vbar > i { border-radius: 999px; }
+.ed-prog > i { border-radius: 999px; background: linear-gradient(90deg, var(--ed-b), var(--ed-c)); }
+.ed-f-d { background: var(--ed-d); } .ed-f-r { background: var(--ed-r); } .ed-f-i { background: var(--ed-i); } .ed-f-o { background: var(--ed-o); }
+.ed-f-g { background: var(--cds-chart-muted); } .ed-f-yes { background: var(--ed-yes); } .ed-f-no { background: var(--ed-no); }
+.ed-mid { position: absolute; left: 50%; top: -1px; bottom: -1px; width: 2px; margin-left: -1px; background: var(--color-fg); opacity: .6; }
+.ed-vline { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; margin-top: 3px; }
+.ed-status { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; margin: 12px 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ed-status b { color: var(--color-fg); }
+.ed-pill { display: inline-flex; align-items: center; gap: 6px; font-weight: 700; color: var(--color-fg); padding: 3px 9px; border-radius: 999px; }
+.ed-pill i { width: 8px; height: 8px; border-radius: 50%; flex: none; }
+.ed-pill.called { background: color-mix(in srgb, var(--ed-called) 18%, transparent); }
+.ed-pill.called i { background: var(--ed-called); }
+.ed-pill.counting { background: color-mix(in srgb, var(--ed-live) 16%, transparent); }
+.ed-pill.counting i { background: var(--ed-live); }
+.ed-pill.waiting { background: color-mix(in srgb, var(--ed-wait) 22%, transparent); }
+.ed-pill.waiting i { background: var(--ed-wait); }
+.ed-src { margin: 8px 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ed a, .ed .ed-a { color: inherit; text-decoration: underline; text-decoration-color: var(--ed-live); text-underline-offset: 3px; }
+
+.ed-crow { margin-top: 10px; }
+.ed-clabel { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-weight: 700; }
+.ed-cnums { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px; margin-top: 2px; font-variant-numeric: tabular-nums; }
+.ed-cnum { display: inline-flex; align-items: center; gap: 6px; }
+.ed .ed-cnum b { font-family: var(--font-serif); font-weight: 400; font-size: var(--cds-font-size-heading); }
+.ed-ctag { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ed-control { margin: 10px 0 0; font-weight: 700; padding: 8px 12px; border-radius: 10px; background: color-mix(in srgb, var(--ed-called) 16%, transparent); }
+.ed-muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 4px 0 0; }
+.ed-fine { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 10px 0 0; }
+.ed .ed-maj b { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--color-fg); }
+
+.ed-feed { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; min-height: 3rem; }
+.ed-item { position: relative; background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--ed-rad); padding: 12px 14px 12px 18px; overflow: hidden; }
+.ed-item::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: linear-gradient(var(--ed-b), var(--ed-c)); }
+.ed-when { display: inline-flex; align-items: center; gap: 8px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; font-weight: 700; }
+.ed-new { color: #fff; background: var(--ed-live); border-radius: 999px; padding: 1px 7px; font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; }
+.ed-text { margin: 4px 0 0; }
+
+.ed-links { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.ed .ed-link { display: block; text-decoration: none; color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--ed-rad); padding: 14px; transition: transform .2s ease, border-color .2s ease; }
+.ed .ed-link:hover { transform: translateY(-2px); border-color: var(--ed-live); }
+.ed-link b { display: block; }
+.ed-link b::after { content: ' ↗'; color: var(--ed-live); }
+.ed-link span { display: block; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: 2px; }
+.ed-fail { display: flex; align-items: center; justify-content: center; gap: 6px; min-height: 2rem; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.ed-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.ed [data-dash-source-state=refreshing] { opacity: .55; transition: opacity var(--cds-dur-slow); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .ed-pulse { animation: ed-ping 1.8s ease-out infinite; }
+  .ed-pill.counting i { animation: ed-blink 1.4s ease-in-out infinite; }
+  .ed-win.pop { animation: ed-pop .6s cubic-bezier(.2, 1.6, .4, 1) both; }
+  .ed-help:not([hidden]) { animation: ed-drop .35s ease-out both; }
+  .ed-hbtn.is-spinning::before { animation: ed-spin .8s linear infinite; }
+}
+@media (prefers-reduced-motion: reduce) { .ed-vbar > i, .ed-bar > i, .ed-prog > i { transition: none; } }
+@keyframes ed-ping { 0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, .75); } 70% { box-shadow: 0 0 0 9px rgba(74, 222, 128, 0); } 100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); } }
+@keyframes ed-blink { 50% { opacity: .25; } }
+@keyframes ed-pop { 0% { transform: scale(.4); opacity: 0; } 100% { transform: scale(1); opacity: 1; } }
+@keyframes ed-drop { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+@keyframes ed-spin { to { transform: rotate(360deg); } }
 </style>
 </head>
 <body>
 <main class="wrap">
-<div class="ed">
-  <header class="ed-head" id="top">
-    <h1 class="ed-title">Election Day 2026</h1>
-    <p class="ed-sub">Tuesday, November 3 · U.S. midterm elections · Georgia and control of Congress</p>
-    <p class="ed-headline dash-skeleton" id="headline" data-draw="headline" data-source="status" data-field="headline" data-row="0">—</p>
-    <p class="ed-polls">
-      <span data-poll="before" hidden>Georgia polls open at 7 AM ET.</span>
-      <span data-poll="open" hidden>Georgia polls are open until 7 PM ET. Anyone in line at 7 PM can still vote.</span>
-      <span data-poll="closed" hidden>Georgia polls closed at 7 PM ET.</span>
-      <span data-draw="pollclock"></span>
+<div class='ed'>
+  <header class='ed-hero' id='top'>
+    <span class='ed-kicker'>U.S. midterms · Tuesday, November 3</span>
+    <h1 class='ed-title'>Election Day 2026</h1>
+    <p class='ed-sub'>Georgia's races and control of Congress</p>
+    <p class='ed-headline dash-skeleton' id='headline' data-draw='headline' data-source='status' data-field='headline' data-row='0'>—</p>
+    <p class='ed-polls'>
+      <span data-poll='before' hidden>Georgia polls open at 7 AM ET.</span>
+      <span data-poll='open' hidden>Georgia polls are open until 7 PM ET. Anyone in line at 7 PM can still vote.</span>
+      <span data-poll='closed' hidden>Georgia polls closed at 7 PM ET.</span>
+      <span data-draw='pollclock'></span>
     </p>
-    <div class="ed-meta">
-      <span>Updated <span class="ed-asof" data-draw="asof">—</span></span>
-      <button class="ed-btn" type="button" data-refresh>Refresh</button>
+    <div class='ed-meta'>
+      <span class='ed-fresh' data-draw='asof'>—</span>
+      <button class='ed-hbtn' type='button' data-help-open aria-controls='how-to-read' aria-expanded='false'>How to read this</button>
+      <button class='ed-hbtn ghost' type='button' data-refresh>Refresh</button>
     </div>
-    <nav class="ed-nav" aria-label="Sections">
-      <button class="ed-btn" type="button" data-go="congress">Congress</button>
-      <button class="ed-btn" type="button" data-go="georgia">Georgia</button>
-      <button class="ed-btn" type="button" data-go="senate-races">Senate races</button>
-      <button class="ed-btn" type="button" data-go="updates">Updates</button>
-      <button class="ed-btn" type="button" data-go="sources">Live sources</button>
-    </nav>
   </header>
 
-  <section class="ed-sec" id="congress">
+  <section class='ed-help' id='how-to-read' hidden aria-labelledby='help-title'>
+    <div class='ed-help-head'><h2 id='help-title'>How to read this dashboard</h2><button class='ed-x' type='button' data-help-close aria-label='Close the guide'>×</button></div>
+    <div class='ed-help-grid'>
+      <div class='ed-help-item'><span class='ed-num'>1</span><h3>What’s here</h3><p>Who controls Congress, every statewide race on Georgia’s ballot plus three amendments, and the Senate races CBS News picked as most likely to decide the majority. The updates feed logs race calls and official announcements.</p></div>
+      <div class='ed-help-item'><span class='ed-num'>2</span><h3>The colors</h3><p>Blue is Democrat, red is Republican and purple is independent. On the amendments, teal is Yes and gold is No. A green pill means AP has called the race, a blinking pink pill means votes are being counted, and gray means counting hasn’t started.</p></div>
+      <div class='ed-help-item'><span class='ed-num'>3</span><h3>Reading a race</h3><p>Each bar is a candidate’s share of the votes counted so far. The thin pink bar under it shows how much of the expected vote AP thinks is in. Leads can grow, shrink or flip until that is nearly full, because early, mail and Election Day ballots are counted at different times.</p></div>
+      <div class='ed-help-item'><span class='ed-num'>4</span><h3>What “called” means</h3><p>A race shows as called only after the Associated Press declares a winner. AP does that once it concludes the trailing candidate has no realistic way to catch up, which can happen before every vote is counted. Until then, a lead is only a lead.</p></div>
+      <div class='ed-help-item'><span class='ed-num'>5</span><h3>Control of Congress</h3><p>The top bar is each chamber’s makeup before today. The AP tally counts the seats each party holds as races are called, including seats not on the ballot this year. The thin line marks the halfway point, and Majority shows how many seats control takes. A 50-50 Senate goes to the vice president’s party.</p></div>
+      <div class='ed-help-item'><span class='ed-num'>6</span><h3>How it updates</h3><p class='ed-howupd'>Claude, an AI assistant, gathers AP race calls and Georgia Secretary of State counts on a schedule: every two hours during the day, then every hour from 7:20 PM to 2:20 AM ET tonight. The Updated pill shows when that last happened. This page also checks for new data every minute while it’s open. Use Live sources for real-time counts. Results are unofficial until certified.</p></div>
+    </div>
+    <button class='ed-hbtn ed-gotit' type='button' data-help-close>Got it</button>
+  </section>
+
+  <nav class='ed-nav' aria-label='Sections'>
+    <button class='ed-chipbtn' type='button' data-go='congress'>Congress</button>
+    <button class='ed-chipbtn' type='button' data-go='georgia'>Georgia</button>
+    <button class='ed-chipbtn' type='button' data-go='senate-races'>Senate races</button>
+    <button class='ed-chipbtn' type='button' data-go='updates'>Updates</button>
+    <button class='ed-chipbtn' type='button' data-go='sources'>Live sources</button>
+  </nav>
+  <div class='ed-legend' aria-label='Color key'>
+    <span><i class='ed-chip ed-p-d'>D</i>Democrat</span>
+    <span><i class='ed-chip ed-p-r'>R</i>Republican</span>
+    <span><i class='ed-chip ed-p-i'>I</i>Independent</span>
+    <span><i class='ed-sw ed-f-yes'></i>Yes</span>
+    <span><i class='ed-sw ed-f-no'></i>No</span>
+    <span><i class='ed-k called'></i>Called</span>
+    <span><i class='ed-k counting'></i>Counting</span>
+    <span><i class='ed-k waiting'></i>Not started</span>
+  </div>
+
+  <section class='ed-sec' id='congress'>
     <h2>Control of Congress</h2>
-    <p class="ed-note">The top row is each chamber's makeup before today. The AP tally below it counts the seats each party holds as races are called, including seats not on the ballot this year.</p>
-    <div class="ed-grid2">
-      <article class="ed-card" id="senate-card">
-        <div class="ed-cardhead"><h3>Senate</h3><span class="ed-tag ed-maj">Majority: <b data-draw="maj" data-chamber="Senate" data-source="chambers" data-field="majority" data-where="chamber=Senate">—</b></span></div>
-        <div class="ed-race dash-skeleton" data-draw="chamber" data-chamber="Senate">—</div>
-        <p class="ed-fine">At 50-50, Vice President JD Vance (R) breaks ties. Both independents caucus with Democrats. Democrats need a net gain of four seats for a majority (CBS News).</p>
+    <p class='ed-note'>The top bar is each chamber’s makeup before today. The AP tally below it counts the seats each party holds as races are called, including seats not on the ballot this year.</p>
+    <div class='ed-grid2'>
+      <article class='ed-card' id='senate-card'>
+        <div class='ed-cardhead'><h3>Senate</h3><span class='ed-tag ed-maj'>Majority: <b data-draw='maj' data-chamber='Senate' data-source='chambers' data-field='majority' data-where='chamber=Senate'>—</b></span></div>
+        <div class='ed-body dash-skeleton' data-draw='chamber' data-chamber='Senate'>—</div>
+        <p class='ed-fine'>At 50-50, Vice President JD Vance (R) breaks ties. Both independents caucus with Democrats. Democrats need a net gain of four seats for a majority (CBS News).</p>
       </article>
-      <article class="ed-card" id="house-card">
-        <div class="ed-cardhead"><h3>House</h3><span class="ed-tag ed-maj">Majority: <b data-draw="maj" data-chamber="House" data-source="chambers" data-field="majority" data-where="chamber=House">—</b></span></div>
-        <div class="ed-race dash-skeleton" data-draw="chamber" data-chamber="House">—</div>
-        <p class="ed-fine">All House seats are on the ballot. The one independent, Rep. Kevin Kiley, caucuses with Republicans. Current makeup from the House Clerk.</p>
+      <article class='ed-card' id='house-card'>
+        <div class='ed-cardhead'><h3>House</h3><span class='ed-tag ed-maj'>Majority: <b data-draw='maj' data-chamber='House' data-source='chambers' data-field='majority' data-where='chamber=House'>—</b></span></div>
+        <div class='ed-body dash-skeleton' data-draw='chamber' data-chamber='House'>—</div>
+        <p class='ed-fine'>All House seats are on the ballot. The one independent, Rep. Kevin Kiley, caucuses with Republicans. Current makeup from the House Clerk.</p>
       </article>
     </div>
   </section>
 
-  <section class="ed-sec" id="georgia">
+  <section class='ed-sec' id='georgia'>
     <h2>Georgia</h2>
-    <p class="ed-note">Results are unofficial until certified. Counts come from the Georgia Secretary of State, mostly as reported by AP. A race shows as called only after AP calls it. No Libertarians made the statewide ballot, so each statewide race has two candidates.</p>
-    <div class="ed-grid2">
-      <article class="ed-card ed-big" id="race-ga-sen">
-        <div class="ed-cardhead"><h3>U.S. Senate</h3><span class="ed-tag">Held by Democrats</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-sen">—</div>
+    <p class='ed-note'>Results are unofficial until certified. Counts come from the Georgia Secretary of State, mostly as reported by AP. A race shows as called only after AP calls it. No Libertarians made the statewide ballot, so each statewide race has two candidates.</p>
+    <div class='ed-grid2'>
+      <article class='ed-card ed-big' id='race-ga-sen'>
+        <div class='ed-cardhead'><h3>U.S. Senate</h3><span class='ed-tag'>Held by Democrats</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-sen'>—</div>
       </article>
-      <article class="ed-card ed-big" id="race-ga-gov">
-        <div class="ed-cardhead"><h3>Governor</h3><span class="ed-tag">Open seat · Gov. Brian Kemp (R) is term-limited</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-gov">—</div>
-      </article>
-    </div>
-
-    <h3 class="ed-subhead">Other statewide races</h3>
-    <div class="ed-grid3">
-      <article class="ed-card" id="race-ga-ltgov">
-        <div class="ed-cardhead"><h3>Lieutenant governor</h3><span class="ed-tag">Open seat</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-ltgov">—</div>
-      </article>
-      <article class="ed-card" id="race-ga-sos">
-        <div class="ed-cardhead"><h3>Secretary of state</h3><span class="ed-tag">Open seat</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-sos">—</div>
-      </article>
-      <article class="ed-card" id="race-ga-ag">
-        <div class="ed-cardhead"><h3>Attorney general</h3><span class="ed-tag">Open seat</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-ag">—</div>
-      </article>
-      <article class="ed-card" id="race-ga-agr">
-        <div class="ed-cardhead"><h3>Agriculture commissioner</h3></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-agr">—</div>
-      </article>
-      <article class="ed-card" id="race-ga-ins">
-        <div class="ed-cardhead"><h3>Insurance commissioner</h3></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-ins">—</div>
-      </article>
-      <article class="ed-card" id="race-ga-lab">
-        <div class="ed-cardhead"><h3>Labor commissioner</h3></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-lab">—</div>
-      </article>
-      <article class="ed-card" id="race-ga-sch">
-        <div class="ed-cardhead"><h3>School superintendent</h3></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-sch">—</div>
-      </article>
-      <article class="ed-card" id="race-ga-psc3">
-        <div class="ed-cardhead"><h3>Public Service Commission, District 3</h3></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-psc3">—</div>
-      </article>
-      <article class="ed-card" id="race-ga-psc5">
-        <div class="ed-cardhead"><h3>Public Service Commission, District 5</h3></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-psc5">—</div>
+      <article class='ed-card ed-big' id='race-ga-gov'>
+        <div class='ed-cardhead'><h3>Governor</h3><span class='ed-tag'>Open seat · Gov. Brian Kemp (R) is term-limited</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-gov'>—</div>
       </article>
     </div>
 
-    <h3 class="ed-subhead">Constitutional amendments</h3>
-    <div class="ed-grid3">
-      <article class="ed-card" id="race-ga-am1">
-        <div class="ed-cardhead"><h3>Amendment 1</h3></div>
-        <p class="ed-desc">Doubles the most land one owner can enroll in Georgia's conservation-use property tax program.</p>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-am1">—</div>
+    <h3 class='ed-subhead'>Other statewide races</h3>
+    <div class='ed-filters' role='group' aria-label='Filter statewide races' data-filter-for='ga-grid'>
+      <button class='ed-fbtn is-on' type='button' data-filter='all' aria-pressed='true'>All</button>
+      <button class='ed-fbtn' type='button' data-filter='called' aria-pressed='false'>Called</button>
+      <button class='ed-fbtn' type='button' data-filter='counting' aria-pressed='false'>Counting</button>
+      <button class='ed-fbtn' type='button' data-filter='waiting' aria-pressed='false'>Not started</button>
+    </div>
+    <div class='ed-grid3 ed-filterable' id='ga-grid'>
+      <article class='ed-card' id='race-ga-ltgov'>
+        <div class='ed-cardhead'><h3>Lieutenant governor</h3><span class='ed-tag'>Open seat</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-ltgov'>—</div>
       </article>
-      <article class="ed-card" id="race-ga-am2">
-        <div class="ed-cardhead"><h3>Amendment 2</h3></div>
-        <p class="ed-desc">Requires nonpartisan elections for all probate judges.</p>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-am2">—</div>
+      <article class='ed-card' id='race-ga-sos'>
+        <div class='ed-cardhead'><h3>Secretary of state</h3><span class='ed-tag'>Open seat</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-sos'>—</div>
       </article>
-      <article class="ed-card" id="race-ga-am3">
-        <div class="ed-cardhead"><h3>Amendment 3</h3></div>
-        <p class="ed-desc">Lets lawmakers put existing 911 fees into a dedicated fund to modernize 911 systems.</p>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-am3">—</div>
+      <article class='ed-card' id='race-ga-ag'>
+        <div class='ed-cardhead'><h3>Attorney general</h3><span class='ed-tag'>Open seat</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-ag'>—</div>
+      </article>
+      <article class='ed-card' id='race-ga-agr'>
+        <div class='ed-cardhead'><h3>Agriculture commissioner</h3></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-agr'>—</div>
+      </article>
+      <article class='ed-card' id='race-ga-ins'>
+        <div class='ed-cardhead'><h3>Insurance commissioner</h3></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-ins'>—</div>
+      </article>
+      <article class='ed-card' id='race-ga-lab'>
+        <div class='ed-cardhead'><h3>Labor commissioner</h3></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-lab'>—</div>
+      </article>
+      <article class='ed-card' id='race-ga-sch'>
+        <div class='ed-cardhead'><h3>School superintendent</h3></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-sch'>—</div>
+      </article>
+      <article class='ed-card' id='race-ga-psc3'>
+        <div class='ed-cardhead'><h3>Public Service Commission, District 3</h3></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-psc3'>—</div>
+      </article>
+      <article class='ed-card' id='race-ga-psc5'>
+        <div class='ed-cardhead'><h3>Public Service Commission, District 5</h3></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-psc5'>—</div>
+      </article>
+      <p class='ed-empty' data-empty='called'>No statewide races have been called yet.</p>
+      <p class='ed-empty' data-empty='counting'>No statewide races are counting right now.</p>
+      <p class='ed-empty' data-empty='waiting'>Every statewide race has started counting.</p>
+    </div>
+
+    <h3 class='ed-subhead'>Constitutional amendments</h3>
+    <div class='ed-grid3'>
+      <article class='ed-card' id='race-ga-am1'>
+        <div class='ed-cardhead'><h3>Amendment 1</h3></div>
+        <p class='ed-desc'>Doubles the most land one owner can enroll in Georgia’s conservation-use property tax program.</p>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-am1'>—</div>
+      </article>
+      <article class='ed-card' id='race-ga-am2'>
+        <div class='ed-cardhead'><h3>Amendment 2</h3></div>
+        <p class='ed-desc'>Requires nonpartisan elections for all probate judges.</p>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-am2'>—</div>
+      </article>
+      <article class='ed-card' id='race-ga-am3'>
+        <div class='ed-cardhead'><h3>Amendment 3</h3></div>
+        <p class='ed-desc'>Lets lawmakers put existing 911 fees into a dedicated fund to modernize 911 systems.</p>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-am3'>—</div>
       </article>
     </div>
-    <p class="ed-fine">Polling place and sample ballot: <a href="https://mvp.sos.ga.gov/s/login/" target="_blank" rel="noopener">My Voter Page</a>. Polls are open 7 AM to 7 PM ET, and anyone in line at 7 PM can vote (Georgia Secretary of State).</p>
+    <p class='ed-fine'>Polling place and sample ballot: <a href='https://mvp.sos.ga.gov/s/login/' target='_blank' rel='noopener'>My Voter Page</a>. Polls are open 7 AM to 7 PM ET, and anyone in line at 7 PM can vote (Georgia Secretary of State).</p>
   </section>
 
-  <section class="ed-sec" id="senate-races">
+  <section class='ed-sec' id='senate-races'>
     <h2>Senate races to watch</h2>
-    <p class="ed-note">The 12 races CBS News named as most likely to decide Senate control, in alphabetical order. Each card shows the main contenders; some ballots list more candidates.</p>
-    <div class="ed-grid3">
-      <article class="ed-card" id="nat-ak">
-        <div class="ed-cardhead"><h3>Alaska</h3><span class="ed-tag">Held by Republicans · four on the ballot</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-ak">—</div>
+    <p class='ed-note'>The 12 races CBS News named as most likely to decide Senate control, in alphabetical order. Each card shows the main contenders; some ballots list more candidates.</p>
+    <div class='ed-filters' role='group' aria-label='Filter Senate races' data-filter-for='senate-grid'>
+      <button class='ed-fbtn is-on' type='button' data-filter='all' aria-pressed='true'>All</button>
+      <button class='ed-fbtn' type='button' data-filter='called' aria-pressed='false'>Called</button>
+      <button class='ed-fbtn' type='button' data-filter='counting' aria-pressed='false'>Counting</button>
+      <button class='ed-fbtn' type='button' data-filter='waiting' aria-pressed='false'>Not started</button>
+    </div>
+    <div class='ed-grid3 ed-filterable' id='senate-grid'>
+      <article class='ed-card' id='nat-ak'>
+        <div class='ed-cardhead'><h3>Alaska</h3><span class='ed-tag'>Held by Republicans · four on the ballot</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-ak'>—</div>
       </article>
-      <article class="ed-card" id="nat-ga">
-        <div class="ed-cardhead"><h3>Georgia</h3><span class="ed-tag">Held by Democrats</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-sen">—</div>
+      <article class='ed-card' id='nat-ga'>
+        <div class='ed-cardhead'><h3>Georgia</h3><span class='ed-tag'>Held by Democrats</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='ga-sen'>—</div>
       </article>
-      <article class="ed-card" id="nat-ia">
-        <div class="ed-cardhead"><h3>Iowa</h3><span class="ed-tag">Open seat · held by Republicans</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-ia">—</div>
+      <article class='ed-card' id='nat-ia'>
+        <div class='ed-cardhead'><h3>Iowa</h3><span class='ed-tag'>Open seat · held by Republicans</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-ia'>—</div>
       </article>
-      <article class="ed-card" id="nat-ks">
-        <div class="ed-cardhead"><h3>Kansas</h3><span class="ed-tag">Held by Republicans</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-ks">—</div>
+      <article class='ed-card' id='nat-ks'>
+        <div class='ed-cardhead'><h3>Kansas</h3><span class='ed-tag'>Held by Republicans</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-ks'>—</div>
       </article>
-      <article class="ed-card" id="nat-me">
-        <div class="ed-cardhead"><h3>Maine</h3><span class="ed-tag">Held by Republicans</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-me">—</div>
+      <article class='ed-card' id='nat-me'>
+        <div class='ed-cardhead'><h3>Maine</h3><span class='ed-tag'>Held by Republicans</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-me'>—</div>
       </article>
-      <article class="ed-card" id="nat-mi">
-        <div class="ed-cardhead"><h3>Michigan</h3><span class="ed-tag">Open seat · held by Democrats</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-mi">—</div>
+      <article class='ed-card' id='nat-mi'>
+        <div class='ed-cardhead'><h3>Michigan</h3><span class='ed-tag'>Open seat · held by Democrats</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-mi'>—</div>
       </article>
-      <article class="ed-card" id="nat-mn">
-        <div class="ed-cardhead"><h3>Minnesota</h3><span class="ed-tag">Open seat · held by Democrats</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-mn">—</div>
+      <article class='ed-card' id='nat-mn'>
+        <div class='ed-cardhead'><h3>Minnesota</h3><span class='ed-tag'>Open seat · held by Democrats</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-mn'>—</div>
       </article>
-      <article class="ed-card" id="nat-ne">
-        <div class="ed-cardhead"><h3>Nebraska</h3><span class="ed-tag">Held by Republicans · independent challenger</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-ne">—</div>
+      <article class='ed-card' id='nat-ne'>
+        <div class='ed-cardhead'><h3>Nebraska</h3><span class='ed-tag'>Held by Republicans · independent challenger</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-ne'>—</div>
       </article>
-      <article class="ed-card" id="nat-nh">
-        <div class="ed-cardhead"><h3>New Hampshire</h3><span class="ed-tag">Open seat · held by Democrats</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-nh">—</div>
+      <article class='ed-card' id='nat-nh'>
+        <div class='ed-cardhead'><h3>New Hampshire</h3><span class='ed-tag'>Open seat · held by Democrats</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-nh'>—</div>
       </article>
-      <article class="ed-card" id="nat-nc">
-        <div class="ed-cardhead"><h3>North Carolina</h3><span class="ed-tag">Open seat · held by Republicans</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-nc">—</div>
+      <article class='ed-card' id='nat-nc'>
+        <div class='ed-cardhead'><h3>North Carolina</h3><span class='ed-tag'>Open seat · held by Republicans</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-nc'>—</div>
       </article>
-      <article class="ed-card" id="nat-oh">
-        <div class="ed-cardhead"><h3>Ohio</h3><span class="ed-tag">Special election · held by Republicans</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-oh">—</div>
+      <article class='ed-card' id='nat-oh'>
+        <div class='ed-cardhead'><h3>Ohio</h3><span class='ed-tag'>Special election · held by Republicans</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-oh'>—</div>
       </article>
-      <article class="ed-card" id="nat-tx">
-        <div class="ed-cardhead"><h3>Texas</h3><span class="ed-tag">Held by Republicans · Sen. John Cornyn lost his primary</span></div>
-        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-tx">—</div>
+      <article class='ed-card' id='nat-tx'>
+        <div class='ed-cardhead'><h3>Texas</h3><span class='ed-tag'>Held by Republicans · Sen. John Cornyn lost his primary</span></div>
+        <div class='ed-body dash-skeleton' data-draw='race' data-race='sen-tx'>—</div>
       </article>
+      <p class='ed-empty' data-empty='called'>No races on this list have been called yet.</p>
+      <p class='ed-empty' data-empty='counting'>No races on this list are counting right now.</p>
+      <p class='ed-empty' data-empty='waiting'>Every race on this list has started counting.</p>
     </div>
   </section>
 
-  <section class="ed-sec" id="updates">
+  <section class='ed-sec' id='updates'>
     <h2>Latest updates</h2>
-    <p class="ed-note">Race calls and official announcements, newest first, each with its source.</p>
-    <ol class="ed-feed" data-draw="feed" data-source="updates"></ol>
+    <p class='ed-note'>Race calls and official announcements, newest first, each with its source.</p>
+    <ol class='ed-feed' data-draw='feed' data-source='updates'></ol>
   </section>
 
-  <section class="ed-sec" id="sources">
+  <section class='ed-sec' id='sources'>
     <h2>Live sources</h2>
-    <ul class="ed-links">
-      <li><a href="https://apnews.com/projects/elections-2026/" target="_blank" rel="noopener">AP election results</a>: race calls and vote counts nationwide, in real time.</li>
-      <li><a href="https://sos.ga.gov/november-3-2026-general-election" target="_blank" rel="noopener">Georgia Secretary of State</a>: the official source for Georgia's count.</li>
-      <li><a href="https://www.ajc.com/politics/election-results/" target="_blank" rel="noopener">AJC Georgia results</a>: statewide and metro Atlanta races from Secretary of State data.</li>
-      <li><a href="https://mvp.sos.ga.gov/s/login/" target="_blank" rel="noopener">My Voter Page</a>: your polling place and sample ballot.</li>
-    </ul>
-    <p class="ed-fine">This page is compiled by Claude, an AI assistant, from AP and Georgia Secretary of State reporting. It refreshes every two hours from 8 AM to 6 PM ET, every hour from 7:20 PM to 2:20 AM ET tonight, then every two hours on Wednesday, and checks for new data every minute while it is open. Results are unofficial until certified; for the latest counts, use the links above.</p>
+    <p class='ed-note'>These update in real time. Everything on this page comes from them.</p>
+    <div class='ed-links'>
+      <a class='ed-link' href='https://apnews.com/projects/elections-2026/' target='_blank' rel='noopener'><b>AP election results</b><span>Race calls and vote counts nationwide</span></a>
+      <a class='ed-link' href='https://sos.ga.gov/november-3-2026-general-election' target='_blank' rel='noopener'><b>Georgia Secretary of State</b><span>The official source for Georgia’s count</span></a>
+      <a class='ed-link' href='https://www.ajc.com/politics/election-results/' target='_blank' rel='noopener'><b>AJC Georgia results</b><span>Statewide and metro Atlanta races from Secretary of State data</span></a>
+      <a class='ed-link' href='https://mvp.sos.ga.gov/s/login/' target='_blank' rel='noopener'><b>My Voter Page</b><span>Your polling place and sample ballot</span></a>
+    </div>
+    <p class='ed-fine ed-howupd'>How this page updates: Claude, an AI assistant, refreshes it from AP and Georgia Secretary of State reporting every two hours from 8 AM to 6 PM ET, every hour from 7:20 PM to 2:20 AM ET tonight, then every two hours on Wednesday. Open pages check for new data every minute. For counts between refreshes, use the links above.</p>
   </section>
 </div>
 </main>
@@ -339,12 +461,13 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
 (() => {
   const pct = d3.format('.1%');
   const int = d3.format(',');
-  // Georgia's fixed poll hours (Georgia Secretary of State): 7 AM to 7 PM ET on Nov 3, 2026.
   const OPEN = Date.UTC(2026, 10, 3, 12, 0);
   const CLOSE = Date.UTC(2026, 10, 4, 0, 0);
-  const tz = 'America/New_York';
-  const dayFmt = new Intl.DateTimeFormat('en-US', { timeZone: tz, weekday: 'short', hour: 'numeric', minute: '2-digit' });
+  const dayFmt = new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', weekday: 'short', hour: 'numeric', minute: '2-digit' });
   const PARTY = { D: 'd', R: 'r', I: 'i' };
+  const motion = !(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  const lastWidth = new Map();
+  const lastStatus = new Map();
 
   const num = (v) => { if (v === null || v === undefined || v === '') return null; const n = Number(v); return Number.isFinite(n) ? n : null; };
   const enc = (v) => encodeURIComponent(String(v));
@@ -352,13 +475,12 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
   const make = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined && text !== null) e.textContent = String(text); return e; };
   const mark = (e, source, field, where) => { e.dataset.source = source; e.dataset.field = field; if (where) e.dataset.where = where; return e; };
   const link = (url, text) => {
-    const ok = typeof url === 'string' && /^https?:\/\//i.test(url);
+    const ok = typeof url === 'string' && (url.startsWith('https://') || url.startsWith('http://'));
     const a = make(ok ? 'a' : 'span', 'ed-a', text);
     if (ok) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; }
     return a;
   };
   const failLine = () => { const f = make('span', 'ed-fail'); f.append(make('i', 'ed-dot'), make('span', '', 'Failed to load')); return f; };
-  // true when every source is loaded; otherwise leaves the placeholder or the failure line
   const ready = (box, ...ids) => {
     const st = ids.map((id) => dash.data(id).status);
     if (st.includes('error')) { box.classList.remove('dash-skeleton'); box.replaceChildren(failLine()); return false; }
@@ -367,8 +489,23 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
     box.replaceChildren();
     return true;
   };
+  // A bar segment that slides from the width it last showed to its new width
+  const seg = (cls, key, share) => {
+    const f = make('i', cls);
+    const to = Math.max(0, Math.min(100, share * 100));
+    const from = lastWidth.has(key) ? lastWidth.get(key) : 0;
+    lastWidth.set(key, to);
+    if (!motion || from === to) { f.style.width = to + '%'; return f; }
+    f.style.width = from + '%';
+    requestAnimationFrame(() => requestAnimationFrame(() => { f.style.width = to + '%'; }));
+    return f;
+  };
+  const pill = (status) => {
+    const p = make('span', 'ed-pill ' + status);
+    p.append(make('i'), status === 'called' ? 'Called' : status === 'counting' ? 'Counting' : 'Not started');
+    return p;
+  };
 
-  // Poll status line, from the fixed schedule above
   const setPolls = () => {
     const now = Date.now();
     const state = now < OPEN ? 'before' : now < CLOSE ? 'open' : 'closed';
@@ -390,11 +527,12 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
     const S = dash.data('status');
     const iso = S.status === 'ok' && S.data.length ? S.data[0].as_of : null;
     const t = iso ? new Date(iso) : null;
+    box.replaceChildren();
     if (!t || isNaN(t)) { box.textContent = '—'; box.classList.remove('is-stale'); return; }
     const mins = Math.max(0, Math.round((Date.now() - t.getTime()) / 60000));
     const ago = mins < 1 ? 'just now' : mins < 60 ? mins + ' min ago' : Math.floor(mins / 60) + ' hr ' + (mins % 60) + ' min ago';
     const stale = mins > 150;
-    box.textContent = when(iso) + ' (' + ago + ')' + (stale ? ', may be out of date' : '');
+    box.append(make('i', 'ed-pulse'), make('span', '', 'Updated ' + when(iso) + ' · ' + ago + (stale ? ', may be out of date' : '')));
     box.classList.toggle('is-stale', stale);
   };
   dash.draw('asof', {
@@ -421,21 +559,18 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
       const v = num(row[field]);
       if (v == null || (v === 0 && cls !== 'd' && cls !== 'r')) return;
       const item = make('span', 'ed-cnum');
-      item.append(cls ? make('span', 'ed-chip ed-p-' + cls, label) : make('span', 'ed-ctag', label));
+      item.append(cls ? make('i', 'ed-chip ed-p-' + cls, label) : make('span', 'ed-ctag', label));
       item.append(mark(make('b', '', int(v)), 'chambers', field, where));
       wrap.append(item);
     };
-    const bar = (d, i, g, r) => {
+    const bar = (tag, d, i, g, r) => {
       const vals = { d: num(d) || 0, i: num(i) || 0, g: num(g) || 0, r: num(r) || 0 };
       const total = vals.d + vals.i + vals.g + vals.r;
       const b = make('div', 'ed-bar');
       b.setAttribute('aria-hidden', 'true');
       if (!total) return b;
       for (const k of indWithDems ? ['d', 'i', 'g', 'r'] : ['d', 'g', 'i', 'r']) {
-        if (!vals[k]) continue;
-        const s = make('i', 'ed-seg ed-f-' + k);
-        s.style.width = (100 * vals[k] / total) + '%';
-        b.append(s);
+        if (vals[k]) b.append(seg('ed-f-' + k, name + tag + k, vals[k] / total));
       }
       b.append(make('i', 'ed-mid'));
       return b;
@@ -444,7 +579,7 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
     const before = make('div', 'ed-crow');
     const n1 = make('div', 'ed-cnums');
     add(n1, 'd', 'before_d', 'D'); add(n1, 'i', 'before_i', 'I'); add(n1, 'r', 'before_r', 'R'); add(n1, '', 'vacant', 'Vacant');
-    before.append(make('div', 'ed-clabel', 'Before today'), n1, bar(row.before_d, row.before_i, row.vacant, row.before_r));
+    before.append(make('div', 'ed-clabel', 'Before today'), n1, bar('-b-', row.before_d, row.before_i, row.vacant, row.before_r));
 
     const now = make('div', 'ed-crow');
     now.append(make('div', 'ed-clabel', 'AP tally now'));
@@ -454,11 +589,11 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
     } else {
       const n2 = make('div', 'ed-cnums');
       add(n2, 'd', 'seats_d', 'D'); add(n2, 'i', 'seats_i', 'I'); add(n2, 'r', 'seats_r', 'R'); add(n2, '', 'uncalled', 'Uncalled');
-      now.append(n2, bar(row.seats_d, row.seats_i, row.uncalled, row.seats_r));
+      now.append(n2, bar('-n-', row.seats_d, row.seats_i, row.uncalled, row.seats_r));
       if (row.tally_source) {
         const src = make('p', 'ed-src');
         src.append('Source: ', mark(link(row.tally_url, row.tally_source), 'chambers', 'tally_source', where));
-        if (row.tally_as_of) src.append(', ' + when(row.tally_as_of));
+        if (row.tally_as_of) src.append(' · ' + when(row.tally_as_of));
         now.append(src);
       }
     }
@@ -467,14 +602,20 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
   });
 
   dash.draw('race', (box) => {
-    if (!ready(box, 'races', 'candidates')) return;
+    if (!ready(box, 'races', 'candidates')) { box.dataset.status = 'waiting'; return; }
     const id = box.dataset.race;
     const race = dash.data('races').data.find((r) => r.race_id === id);
     if (!race) { box.textContent = '—'; return; }
+    const status = ['called', 'counting', 'waiting'].includes(race.status) ? race.status : 'waiting';
+    box.dataset.status = status;
+    const art = box.closest ? box.closest('article') : null;
+    const card = art ? art.id : id;
+    const before = lastStatus.get(card);
+    lastStatus.set(card, status);
+    const fresh = motion && status === 'called' && before !== undefined && before !== 'called';
     const cands = dash.data('candidates').data.filter((c) => c.race_id === id);
     const counted = cands.some((c) => num(c.pct) != null);
     cands.sort((a, b) => counted ? (num(b.pct) ?? -1) - (num(a.pct) ?? -1) : (num(a.order) ?? 0) - (num(b.order) ?? 0));
-    const called = race.status === 'called';
     const rw = 'race_id=' + enc(id);
 
     const list = make('ul', 'ed-cands');
@@ -482,19 +623,17 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
       const where = 'cand_id=' + enc(c.cand_id);
       const li = make('li', 'ed-cand');
       const top = make('div', 'ed-ctop');
-      if (c.party) top.append(mark(make('span', 'ed-chip ed-p-' + (PARTY[c.party] || 'o'), c.party), 'candidates', 'party', where));
+      if (c.party) top.append(mark(make('i', 'ed-chip ed-p-' + (PARTY[c.party] || 'o'), c.party), 'candidates', 'party', where));
       top.append(mark(make('span', 'ed-name', c.name), 'candidates', 'name', where));
       if (c.incumbent === true) top.append(make('span', 'ed-inc', 'incumbent'));
-      if (called && race.winner && race.winner === c.name) top.append(make('span', 'ed-check', '✓ Called'));
+      if (status === 'called' && race.winner && race.winner === c.name) top.append(make('span', 'ed-win' + (fresh ? ' pop' : ''), '✓ Called'));
       const p = num(c.pct);
       if (p != null) top.append(mark(make('span', 'ed-pct', pct(p)), 'candidates', 'pct', where));
       li.append(top);
       if (p != null) {
         const vb = make('div', 'ed-vbar');
         vb.setAttribute('aria-hidden', 'true');
-        const fill = make('i', 'ed-f-' + (c.party ? (PARTY[c.party] || 'o') : (c.name === 'Yes' ? 'yes' : 'no')));
-        fill.style.width = Math.max(0, Math.min(100, p * 100)) + '%';
-        vb.append(fill);
+        vb.append(seg('ed-f-' + (c.party ? (PARTY[c.party] || 'o') : (c.name === 'Yes' ? 'yes' : 'no')), card + c.cand_id, p));
         li.append(vb);
       }
       const v = num(c.votes);
@@ -506,23 +645,31 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
       list.append(li);
     }
 
-    const st = make('p', 'ed-status ed-s-' + (race.status || 'waiting'));
-    if (called) {
-      st.append('Called by ', mark(make('span', '', race.called_by || 'a decision desk'), 'races', 'called_by', rw), ' for ', mark(make('span', '', race.winner), 'races', 'winner', rw));
-      if (race.called_at) st.append(', ' + when(race.called_at));
-    } else if (race.status === 'counting') {
+    const st = make('p', 'ed-status');
+    const txt = make('span');
+    if (status === 'called') {
+      txt.append('by ', mark(make('span', '', race.called_by || 'a decision desk'), 'races', 'called_by', rw), ' for ', mark(make('b', '', race.winner), 'races', 'winner', rw));
+      if (race.called_at) txt.append(' · ' + when(race.called_at));
+    } else if (status === 'counting') {
       const pi = num(race.pct_in);
-      if (pi != null) st.append(mark(make('span', '', pct(pi)), 'races', 'pct_in', rw), ' of expected vote counted. Not called.');
-      else st.append('Votes are being counted. Not called.');
+      if (pi != null) txt.append(mark(make('b', '', pct(pi)), 'races', 'pct_in', rw), ' of expected vote counted');
+      else txt.append('Votes are coming in');
     } else {
-      st.append('No votes counted yet.');
+      txt.append('No votes counted yet');
     }
+    st.append(pill(status), txt);
     box.append(list, st);
-
+    const pi = num(race.pct_in);
+    if (status === 'counting' && pi != null) {
+      const pr = make('div', 'ed-prog');
+      pr.setAttribute('aria-hidden', 'true');
+      pr.append(seg('', card + id + '-in', pi));
+      box.append(pr);
+    }
     if (race.source) {
       const src = make('p', 'ed-src');
       src.append('Source: ', mark(link(race.source_url, race.source), 'races', 'source', rw));
-      if (race.as_of) src.append(', ' + when(race.as_of));
+      if (race.as_of) src.append(' · ' + when(race.as_of));
       box.append(src);
     }
   });
@@ -536,23 +683,73 @@ window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 
     if (!rows.length) { ol.append(make('li', 'ed-item ed-muted', 'No updates yet.')); return; }
     for (const u of rows) {
       const li = make('li', 'ed-item');
-      li.append(make('time', 'ed-when', when(u.at)), make('p', 'ed-text', u.text));
+      const head = make('div', 'ed-when');
+      head.append(make('time', '', when(u.at)));
+      if (Date.now() - (Date.parse(u.at) || 0) < 3600000) head.append(make('span', 'ed-new', 'New'));
+      li.append(head, make('p', 'ed-text', u.text));
       if (u.source) { const s = make('p', 'ed-src'); s.append(link(u.url, u.source)); li.append(s); }
       ol.append(li);
     }
   });
 
   for (const b of document.querySelectorAll('[data-refresh]')) {
-    b.addEventListener('click', () => { for (const id of ['status', 'chambers', 'races', 'candidates', 'updates']) dash.refresh(id); });
+    b.addEventListener('click', () => {
+      for (const id of ['status', 'chambers', 'races', 'candidates', 'updates']) dash.refresh(id);
+      b.classList.add('is-spinning');
+      setTimeout(() => b.classList.remove('is-spinning'), 1200);
+    });
   }
-  for (const b of document.querySelectorAll('[data-go]')) {
+
+  const setHelp = (open) => {
+    for (const p of document.querySelectorAll('.ed-help')) p.hidden = !open;
+    for (const b of document.querySelectorAll('[data-help-open]')) b.setAttribute('aria-expanded', open ? 'true' : 'false');
+  };
+  for (const b of document.querySelectorAll('[data-help-open]')) {
+    b.addEventListener('click', () => {
+      const panel = document.querySelector('.ed-help');
+      if (!panel) return;
+      const open = panel.hidden;
+      setHelp(open);
+      if (open) panel.scrollIntoView({ behavior: motion ? 'smooth' : 'auto', block: 'start' });
+    });
+  }
+  for (const b of document.querySelectorAll('[data-help-close]')) {
+    b.addEventListener('click', () => {
+      setHelp(false);
+      const top = document.getElementById('top');
+      if (top) top.scrollIntoView({ behavior: motion ? 'smooth' : 'auto', block: 'start' });
+    });
+  }
+
+  for (const group of document.querySelectorAll('[data-filter-for]')) {
+    const grid = document.getElementById(group.dataset.filterFor);
+    for (const b of group.querySelectorAll('[data-filter]')) {
+      b.addEventListener('click', () => {
+        const f = b.dataset.filter;
+        if (grid) for (const k of ['called', 'counting', 'waiting']) grid.classList.toggle('f-' + k, f === k);
+        for (const o of group.querySelectorAll('[data-filter]')) {
+          o.classList.toggle('is-on', o === b);
+          o.setAttribute('aria-pressed', o === b ? 'true' : 'false');
+        }
+      });
+    }
+  }
+
+  const navs = [...document.querySelectorAll('[data-go]')];
+  for (const b of navs) {
     b.addEventListener('click', () => {
       const target = document.getElementById(b.dataset.go);
       if (!target) return;
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      target.scrollIntoView({ behavior: motion ? 'smooth' : 'auto', block: 'start' });
       dash.setLink(target.id);
     });
   }
+  try {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) for (const b of navs) b.classList.toggle('is-on', b.dataset.go === e.target.id);
+    }, { root: document, rootMargin: '-30% 0px -60% 0px' });
+    for (const b of navs) { const t = document.getElementById(b.dataset.go); if (t) io.observe(t); }
+  } catch (e) { /* section highlighting is optional */ }
 })();
 </script>
 <script>dash.start();</script>
