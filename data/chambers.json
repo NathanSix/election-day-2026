@@ -1,0 +1,34 @@
+[
+ {
+  "chamber": "Senate",
+  "before_r": 53,
+  "before_d": 45,
+  "before_i": 2,
+  "vacant": 0,
+  "majority": 51,
+  "seats_r": null,
+  "seats_d": null,
+  "seats_i": null,
+  "uncalled": null,
+  "tally_source": "",
+  "tally_url": "",
+  "tally_as_of": "",
+  "control": ""
+ },
+ {
+  "chamber": "House",
+  "before_r": 218,
+  "before_d": 214,
+  "before_i": 1,
+  "vacant": 2,
+  "majority": 218,
+  "seats_r": null,
+  "seats_d": null,
+  "seats_i": null,
+  "uncalled": null,
+  "tally_source": "",
+  "tally_url": "",
+  "tally_as_of": "",
+  "control": ""
+ }
+]

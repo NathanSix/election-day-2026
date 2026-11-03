@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Election Day 2026: Georgia and control of Congress</title>
+<meta name="description" content="Georgia's statewide races and amendments, control of Congress and 12 key Senate races for the Nov. 3, 2026 midterms, with AP race calls.">
+<meta property="og:title" content="Election Day 2026: Georgia and control of Congress">
+<meta property="og:description" content="Georgia's statewide races and amendments, control of Congress and 12 key Senate races for the Nov. 3, 2026 midterms, with AP race calls.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nathansix.github.io/election-day-2026/">
+<meta name="theme-color" content="#f7f6f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1a18" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='4' y='12' width='24' height='16' rx='3' fill='%232f6bd9'/%3E%3Crect x='9' y='4' width='14' height='12' rx='1.5' fill='%23ffffff' stroke='%23d1443a' stroke-width='2'/%3E%3Crect x='8' y='14' width='16' height='3' rx='1.5' fill='%231b1a18'/%3E%3C/svg%3E">
+<style>
+:root {
+  --color-fg: #1f1e1c; --color-fg-muted: #66625b; --color-bg: #f7f6f3; --color-panel: #ffffff; --color-border-line: #e3e0da;
+  --color-ok: #1f7a4d; --color-warn: #9a5600; --color-bad: #c0392b;
+  --cds-chart-grid: #ebe8e2; --cds-chart-muted: #b9b5ad;
+  --cds-font-size-caption: 0.8125rem; --cds-font-size-body: 1rem; --cds-font-size-heading: 1.25rem; --cds-font-size-title: 2rem;
+  --cds-font-weight-medium: 600;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 12px; --cds-gap-lg: 20px; --cds-gap-xl: 32px;
+  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 16px;
+  --cds-radius: 8px; --cds-dur-slow: 400ms;
+  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: Georgia, "Times New Roman", serif;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) { :root {
+  --color-fg: #ecebe8; --color-fg-muted: #aaa69e; --color-bg: #1b1a18; --color-panel: #252421; --color-border-line: #3a3833;
+  --color-ok: #5cc28f; --color-warn: #e0a54a; --color-bad: #ef6b5b;
+  --cds-chart-grid: #35332f; --cds-chart-muted: #6e6a63; } }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); line-height: 1.45; }
+.wrap { padding: 16px max(16px, env(safe-area-inset-right)) 48px max(16px, env(safe-area-inset-left)); }
+.dash-skeleton { color: transparent !important; position: relative; min-height: 1.3em; }
+.dash-skeleton::after { content: ""; position: absolute; left: 0; top: 0.25em; width: 45%; height: 0.8em; border-radius: 4px; background: var(--color-border-line); }
+@media (prefers-reduced-motion: no-preference) { .dash-skeleton::after { animation: ed-pulse 1.1s ease-in-out infinite alternate; } }
+@keyframes ed-pulse { from { opacity: .45; } to { opacity: 1; } }
+
+
+  .ed { --ed-d: #2f6bd9; --ed-r: #d1443a; --ed-i: #8a62c8; --ed-o: #7d838c; --ed-yes: #3f7f8f; --ed-no: #94783f;
+    font-family: var(--font-sans); color: var(--color-fg); max-width: 68rem; margin-inline: auto; font-size: var(--cds-font-size-body); }
+  .ed-head { padding-block: var(--cds-pad-md) var(--cds-pad-sm); }
+  .ed-title { font-family: var(--font-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.15; margin: 0; }
+  .ed-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: var(--cds-gap-xs) 0 0; }
+  .ed-headline { font-size: var(--cds-font-size-heading); line-height: 1.35; margin: var(--cds-gap-md) 0 var(--cds-gap-sm); max-width: 46rem; }
+  .ed-polls { margin: 0 0 var(--cds-gap-xs); font-weight: var(--cds-font-weight-medium); }
+  .ed-meta { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs) var(--cds-gap-md); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ed-asof.is-stale { color: var(--color-warn); }
+  .ed-btn { font: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+  .ed-nav { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); margin-top: var(--cds-gap-md); }
+  .ed-sec { margin-top: var(--cds-gap-xl); scroll-margin-top: var(--cds-gap-md); }
+  .ed-sec > h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+  .ed-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-md); max-width: 46rem; }
+  .ed-subhead { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-lg) 0 var(--cds-gap-sm); }
+  .ed-grid2 { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr)); }
+  .ed-grid3 { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+  .ed-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+  .ed-cardhead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--cds-gap-xs) var(--cds-gap-sm); margin-bottom: var(--cds-gap-sm); }
+  .ed-card h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0; }
+  .ed-tag { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ed-desc { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0 0 var(--cds-gap-sm); }
+  .ed-race { min-height: 4.5rem; }
+  .ed-cands { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--cds-gap-sm); }
+  .ed-ctop { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs); }
+  .ed-name { font-weight: var(--cds-font-weight-medium); overflow-wrap: anywhere; }
+  .ed-inc { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ed-check { color: var(--color-ok); font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); }
+  .ed-pct { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
+  .ed-big .ed-pct { font-family: var(--font-serif); font-weight: 400; font-size: var(--cds-font-size-heading); }
+  .ed-chip { display: inline-grid; place-items: center; min-width: 1.25rem; height: 1.25rem; padding: 0 0.25rem; border-radius: var(--cds-radius); color: #fff; font-size: var(--cds-font-size-caption); font-weight: var(--cds-font-weight-medium); line-height: 1; }
+  .ed-p-d { background: var(--ed-d); } .ed-p-r { background: var(--ed-r); } .ed-p-i { background: var(--ed-i); } .ed-p-o { background: var(--ed-o); }
+  .ed-vbar, .ed-bar { position: relative; display: flex; height: 0.5rem; margin-top: var(--cds-gap-xs); border-radius: var(--cds-radius); background: var(--cds-chart-grid); overflow: hidden; }
+  .ed-bar { height: 0.75rem; }
+  .ed-vbar > i, .ed-bar > i.ed-seg { display: block; height: 100%; }
+  .ed-f-d { background: var(--ed-d); } .ed-f-r { background: var(--ed-r); } .ed-f-i { background: var(--ed-i); } .ed-f-o { background: var(--ed-o); }
+  .ed-f-g { background: var(--cds-chart-muted); } .ed-f-yes { background: var(--ed-yes); } .ed-f-no { background: var(--ed-no); }
+  .ed-mid { position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--color-fg); opacity: .55; }
+  .ed-vline { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; margin-top: 2px; }
+  .ed-status { margin: var(--cds-gap-sm) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ed-status.ed-s-called { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+  .ed-src { margin: var(--cds-gap-xs) 0 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ed a, .ed .ed-a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+  .ed-crow { margin-top: var(--cds-gap-sm); }
+  .ed-clabel { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ed-cnums { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-xs) var(--cds-gap-md); margin-top: 2px; font-variant-numeric: tabular-nums; }
+  .ed-cnum { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
+  .ed .ed-cnum b { font-family: var(--font-serif); font-weight: 400; font-size: var(--cds-font-size-heading); }
+  .ed-ctag { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ed-control { margin: var(--cds-gap-sm) 0 0; font-weight: var(--cds-font-weight-medium); }
+  .ed-muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 2px 0 0; }
+  .ed-fine { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: var(--cds-gap-sm) 0 0; }
+  .ed .ed-maj b { font-variant-numeric: tabular-nums; font-weight: var(--cds-font-weight-medium); }
+  .ed-feed { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--cds-gap-sm); min-height: 3rem; }
+  .ed-item { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); }
+  .ed-when { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .ed-text { margin: 2px 0 0; }
+  .ed-links { margin: 0; padding-left: 1.1rem; display: grid; gap: var(--cds-gap-xs); }
+  .ed-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: 2rem; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .ed-dot { width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+  .ed [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+</style>
+</head>
+<body>
+<main class="wrap">
+<div class="ed">
+  <header class="ed-head" id="top">
+    <h1 class="ed-title">Election Day 2026</h1>
+    <p class="ed-sub">Tuesday, November 3 · U.S. midterm elections · Georgia and control of Congress</p>
+    <p class="ed-headline dash-skeleton" id="headline" data-draw="headline" data-source="status" data-field="headline" data-row="0">—</p>
+    <p class="ed-polls">
+      <span data-poll="before" hidden>Georgia polls open at 7 AM ET.</span>
+      <span data-poll="open" hidden>Georgia polls are open until 7 PM ET. Anyone in line at 7 PM can still vote.</span>
+      <span data-poll="closed" hidden>Georgia polls closed at 7 PM ET.</span>
+      <span data-draw="pollclock"></span>
+    </p>
+    <div class="ed-meta">
+      <span>Updated <span class="ed-asof" data-draw="asof">—</span></span>
+      <button class="ed-btn" type="button" data-refresh>Refresh</button>
+    </div>
+    <nav class="ed-nav" aria-label="Sections">
+      <button class="ed-btn" type="button" data-go="congress">Congress</button>
+      <button class="ed-btn" type="button" data-go="georgia">Georgia</button>
+      <button class="ed-btn" type="button" data-go="senate-races">Senate races</button>
+      <button class="ed-btn" type="button" data-go="updates">Updates</button>
+      <button class="ed-btn" type="button" data-go="sources">Live sources</button>
+    </nav>
+  </header>
+
+  <section class="ed-sec" id="congress">
+    <h2>Control of Congress</h2>
+    <p class="ed-note">The top row is each chamber's makeup before today. The AP tally below it counts the seats each party holds as races are called, including seats not on the ballot this year.</p>
+    <div class="ed-grid2">
+      <article class="ed-card" id="senate-card">
+        <div class="ed-cardhead"><h3>Senate</h3><span class="ed-tag ed-maj">Majority: <b data-draw="maj" data-chamber="Senate" data-source="chambers" data-field="majority" data-where="chamber=Senate">—</b></span></div>
+        <div class="ed-race dash-skeleton" data-draw="chamber" data-chamber="Senate">—</div>
+        <p class="ed-fine">At 50-50, Vice President JD Vance (R) breaks ties. Both independents caucus with Democrats. Democrats need a net gain of four seats for a majority (CBS News).</p>
+      </article>
+      <article class="ed-card" id="house-card">
+        <div class="ed-cardhead"><h3>House</h3><span class="ed-tag ed-maj">Majority: <b data-draw="maj" data-chamber="House" data-source="chambers" data-field="majority" data-where="chamber=House">—</b></span></div>
+        <div class="ed-race dash-skeleton" data-draw="chamber" data-chamber="House">—</div>
+        <p class="ed-fine">All House seats are on the ballot. The one independent, Rep. Kevin Kiley, caucuses with Republicans. Current makeup from the House Clerk.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="ed-sec" id="georgia">
+    <h2>Georgia</h2>
+    <p class="ed-note">Results are unofficial until certified. Counts come from the Georgia Secretary of State, mostly as reported by AP. A race shows as called only after AP calls it. No Libertarians made the statewide ballot, so each statewide race has two candidates.</p>
+    <div class="ed-grid2">
+      <article class="ed-card ed-big" id="race-ga-sen">
+        <div class="ed-cardhead"><h3>U.S. Senate</h3><span class="ed-tag">Held by Democrats</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-sen">—</div>
+      </article>
+      <article class="ed-card ed-big" id="race-ga-gov">
+        <div class="ed-cardhead"><h3>Governor</h3><span class="ed-tag">Open seat · Gov. Brian Kemp (R) is term-limited</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-gov">—</div>
+      </article>
+    </div>
+
+    <h3 class="ed-subhead">Other statewide races</h3>
+    <div class="ed-grid3">
+      <article class="ed-card" id="race-ga-ltgov">
+        <div class="ed-cardhead"><h3>Lieutenant governor</h3><span class="ed-tag">Open seat</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-ltgov">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-sos">
+        <div class="ed-cardhead"><h3>Secretary of state</h3><span class="ed-tag">Open seat</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-sos">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-ag">
+        <div class="ed-cardhead"><h3>Attorney general</h3><span class="ed-tag">Open seat</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-ag">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-agr">
+        <div class="ed-cardhead"><h3>Agriculture commissioner</h3></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-agr">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-ins">
+        <div class="ed-cardhead"><h3>Insurance commissioner</h3></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-ins">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-lab">
+        <div class="ed-cardhead"><h3>Labor commissioner</h3></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-lab">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-sch">
+        <div class="ed-cardhead"><h3>School superintendent</h3></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-sch">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-psc3">
+        <div class="ed-cardhead"><h3>Public Service Commission, District 3</h3></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-psc3">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-psc5">
+        <div class="ed-cardhead"><h3>Public Service Commission, District 5</h3></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-psc5">—</div>
+      </article>
+    </div>
+
+    <h3 class="ed-subhead">Constitutional amendments</h3>
+    <div class="ed-grid3">
+      <article class="ed-card" id="race-ga-am1">
+        <div class="ed-cardhead"><h3>Amendment 1</h3></div>
+        <p class="ed-desc">Doubles the most land one owner can enroll in Georgia's conservation-use property tax program.</p>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-am1">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-am2">
+        <div class="ed-cardhead"><h3>Amendment 2</h3></div>
+        <p class="ed-desc">Requires nonpartisan elections for all probate judges.</p>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-am2">—</div>
+      </article>
+      <article class="ed-card" id="race-ga-am3">
+        <div class="ed-cardhead"><h3>Amendment 3</h3></div>
+        <p class="ed-desc">Lets lawmakers put existing 911 fees into a dedicated fund to modernize 911 systems.</p>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-am3">—</div>
+      </article>
+    </div>
+    <p class="ed-fine">Polling place and sample ballot: <a href="https://mvp.sos.ga.gov/s/login/" target="_blank" rel="noopener">My Voter Page</a>. Polls are open 7 AM to 7 PM ET, and anyone in line at 7 PM can vote (Georgia Secretary of State).</p>
+  </section>
+
+  <section class="ed-sec" id="senate-races">
+    <h2>Senate races to watch</h2>
+    <p class="ed-note">The 12 races CBS News named as most likely to decide Senate control, in alphabetical order. Each card shows the main contenders; some ballots list more candidates.</p>
+    <div class="ed-grid3">
+      <article class="ed-card" id="nat-ak">
+        <div class="ed-cardhead"><h3>Alaska</h3><span class="ed-tag">Held by Republicans · four on the ballot</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-ak">—</div>
+      </article>
+      <article class="ed-card" id="nat-ga">
+        <div class="ed-cardhead"><h3>Georgia</h3><span class="ed-tag">Held by Democrats</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="ga-sen">—</div>
+      </article>
+      <article class="ed-card" id="nat-ia">
+        <div class="ed-cardhead"><h3>Iowa</h3><span class="ed-tag">Open seat · held by Republicans</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-ia">—</div>
+      </article>
+      <article class="ed-card" id="nat-ks">
+        <div class="ed-cardhead"><h3>Kansas</h3><span class="ed-tag">Held by Republicans</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-ks">—</div>
+      </article>
+      <article class="ed-card" id="nat-me">
+        <div class="ed-cardhead"><h3>Maine</h3><span class="ed-tag">Held by Republicans</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-me">—</div>
+      </article>
+      <article class="ed-card" id="nat-mi">
+        <div class="ed-cardhead"><h3>Michigan</h3><span class="ed-tag">Open seat · held by Democrats</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-mi">—</div>
+      </article>
+      <article class="ed-card" id="nat-mn">
+        <div class="ed-cardhead"><h3>Minnesota</h3><span class="ed-tag">Open seat · held by Democrats</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-mn">—</div>
+      </article>
+      <article class="ed-card" id="nat-ne">
+        <div class="ed-cardhead"><h3>Nebraska</h3><span class="ed-tag">Held by Republicans · independent challenger</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-ne">—</div>
+      </article>
+      <article class="ed-card" id="nat-nh">
+        <div class="ed-cardhead"><h3>New Hampshire</h3><span class="ed-tag">Open seat · held by Democrats</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-nh">—</div>
+      </article>
+      <article class="ed-card" id="nat-nc">
+        <div class="ed-cardhead"><h3>North Carolina</h3><span class="ed-tag">Open seat · held by Republicans</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-nc">—</div>
+      </article>
+      <article class="ed-card" id="nat-oh">
+        <div class="ed-cardhead"><h3>Ohio</h3><span class="ed-tag">Special election · held by Republicans</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-oh">—</div>
+      </article>
+      <article class="ed-card" id="nat-tx">
+        <div class="ed-cardhead"><h3>Texas</h3><span class="ed-tag">Held by Republicans · Sen. John Cornyn lost his primary</span></div>
+        <div class="ed-race dash-skeleton" data-draw="race" data-race="sen-tx">—</div>
+      </article>
+    </div>
+  </section>
+
+  <section class="ed-sec" id="updates">
+    <h2>Latest updates</h2>
+    <p class="ed-note">Race calls and official announcements, newest first, each with its source.</p>
+    <ol class="ed-feed" data-draw="feed" data-source="updates"></ol>
+  </section>
+
+  <section class="ed-sec" id="sources">
+    <h2>Live sources</h2>
+    <ul class="ed-links">
+      <li><a href="https://apnews.com/projects/elections-2026/" target="_blank" rel="noopener">AP election results</a>: race calls and vote counts nationwide, in real time.</li>
+      <li><a href="https://sos.ga.gov/november-3-2026-general-election" target="_blank" rel="noopener">Georgia Secretary of State</a>: the official source for Georgia's count.</li>
+      <li><a href="https://www.ajc.com/politics/election-results/" target="_blank" rel="noopener">AJC Georgia results</a>: statewide and metro Atlanta races from Secretary of State data.</li>
+      <li><a href="https://mvp.sos.ga.gov/s/login/" target="_blank" rel="noopener">My Voter Page</a>: your polling place and sample ballot.</li>
+    </ul>
+    <p class="ed-fine">This page is compiled by Claude, an AI assistant, from AP and Georgia Secretary of State reporting. It refreshes every two hours from 8 AM to 6 PM ET, every hour from 7:20 PM to 2:20 AM ET tonight, then every two hours on Wednesday, and checks for new data every minute while it is open. Results are unofficial until certified; for the latest counts, use the links above.</p>
+  </section>
+</div>
+</main>
+<script>
+window.d3 = { format: (spec) => spec === '.1%' ? (x) => (Math.round(x * 1000) / 10).toFixed(1) + '%' : (x) => Number(x).toLocaleString('en-US') };
+(() => {
+  const IDS = ['status', 'chambers', 'races', 'candidates', 'updates'];
+  const store = {};
+  const draws = [];
+  let pending = null;
+  const render = () => {
+    for (const [name, f] of draws) {
+      for (const el of document.querySelectorAll('[data-draw="' + name + '"]')) {
+        try {
+          if (typeof f === 'function') f(el);
+          else { if (!('_made' in el)) el._made = f.mount(el); f.update(el, el._made); }
+        } catch (e) { console.error(name, e); }
+      }
+    }
+  };
+  const load = async (id) => {
+    try {
+      const r = await fetch('data/' + id + '.json?t=' + Date.now(), { cache: 'no-store' });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const rows = await r.json();
+      store[id] = { status: 'ok', data: Array.isArray(rows) ? rows : [] };
+    } catch (e) {
+      if (!store[id] || store[id].status !== 'ok') store[id] = { status: 'error', data: [] };
+    }
+  };
+  const loadAll = async () => { await Promise.all(IDS.map(load)); render(); };
+  window.dash = {
+    data: (id) => store[id] || { status: 'loading', data: [] },
+    draw: (name, f) => { draws.push([name, f]); },
+    refresh: () => { if (pending) return; pending = setTimeout(() => { pending = null; loadAll(); }, 50); },
+    setLink: (id) => { try { history.replaceState(null, '', '#' + id); } catch (e) {} },
+    start: () => {
+      render();
+      loadAll();
+      setInterval(loadAll, 60000);
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) loadAll(); });
+    },
+  };
+})();
+</script>
+<script>
+(() => {
+  const pct = d3.format('.1%');
+  const int = d3.format(',');
+  // Georgia's fixed poll hours (Georgia Secretary of State): 7 AM to 7 PM ET on Nov 3, 2026.
+  const OPEN = Date.UTC(2026, 10, 3, 12, 0);
+  const CLOSE = Date.UTC(2026, 10, 4, 0, 0);
+  const tz = 'America/New_York';
+  const dayFmt = new Intl.DateTimeFormat('en-US', { timeZone: tz, weekday: 'short', hour: 'numeric', minute: '2-digit' });
+  const PARTY = { D: 'd', R: 'r', I: 'i' };
+
+  const num = (v) => { if (v === null || v === undefined || v === '') return null; const n = Number(v); return Number.isFinite(n) ? n : null; };
+  const enc = (v) => encodeURIComponent(String(v));
+  const when = (iso) => { const d = new Date(iso); return isNaN(d) ? '' : dayFmt.format(d) + ' ET'; };
+  const make = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text !== undefined && text !== null) e.textContent = String(text); return e; };
+  const mark = (e, source, field, where) => { e.dataset.source = source; e.dataset.field = field; if (where) e.dataset.where = where; return e; };
+  const link = (url, text) => {
+    const ok = typeof url === 'string' && /^https?:\/\//i.test(url);
+    const a = make(ok ? 'a' : 'span', 'ed-a', text);
+    if (ok) { a.href = url; a.target = '_blank'; a.rel = 'noopener'; }
+    return a;
+  };
+  const failLine = () => { const f = make('span', 'ed-fail'); f.append(make('i', 'ed-dot'), make('span', '', 'Failed to load')); return f; };
+  // true when every source is loaded; otherwise leaves the placeholder or the failure line
+  const ready = (box, ...ids) => {
+    const st = ids.map((id) => dash.data(id).status);
+    if (st.includes('error')) { box.classList.remove('dash-skeleton'); box.replaceChildren(failLine()); return false; }
+    if (st.some((s) => s !== 'ok')) { box.replaceChildren(); box.textContent = '—'; return false; }
+    box.classList.remove('dash-skeleton');
+    box.replaceChildren();
+    return true;
+  };
+
+  // Poll status line, from the fixed schedule above
+  const setPolls = () => {
+    const now = Date.now();
+    const state = now < OPEN ? 'before' : now < CLOSE ? 'open' : 'closed';
+    for (const s of document.querySelectorAll('[data-poll]')) s.hidden = s.dataset.poll !== state;
+  };
+  dash.draw('pollclock', {
+    mount: () => { setPolls(); return setInterval(setPolls, 30000); },
+    update: () => setPolls(),
+    unmount: (el, timer) => clearInterval(timer),
+  });
+
+  dash.draw('headline', (box) => {
+    if (!ready(box, 'status')) return;
+    const row = dash.data('status').data[0];
+    box.textContent = row && row.headline ? row.headline : '—';
+  });
+
+  const drawAsof = (box) => {
+    const S = dash.data('status');
+    const iso = S.status === 'ok' && S.data.length ? S.data[0].as_of : null;
+    const t = iso ? new Date(iso) : null;
+    if (!t || isNaN(t)) { box.textContent = '—'; box.classList.remove('is-stale'); return; }
+    const mins = Math.max(0, Math.round((Date.now() - t.getTime()) / 60000));
+    const ago = mins < 1 ? 'just now' : mins < 60 ? mins + ' min ago' : Math.floor(mins / 60) + ' hr ' + (mins % 60) + ' min ago';
+    const stale = mins > 150;
+    box.textContent = when(iso) + ' (' + ago + ')' + (stale ? ', may be out of date' : '');
+    box.classList.toggle('is-stale', stale);
+  };
+  dash.draw('asof', {
+    mount: (box) => setInterval(() => drawAsof(box), 30000),
+    update: (box) => drawAsof(box),
+    unmount: (box, timer) => clearInterval(timer),
+  });
+
+  dash.draw('maj', (box) => {
+    if (!ready(box, 'chambers')) return;
+    const row = dash.data('chambers').data.find((r) => r.chamber === box.dataset.chamber);
+    const v = row ? num(row.majority) : null;
+    box.textContent = v == null ? '—' : int(v);
+  });
+
+  dash.draw('chamber', (box) => {
+    if (!ready(box, 'chambers')) return;
+    const name = box.dataset.chamber;
+    const row = dash.data('chambers').data.find((r) => r.chamber === name);
+    if (!row) { box.textContent = '—'; return; }
+    const where = 'chamber=' + enc(name);
+    const indWithDems = name === 'Senate';
+    const add = (wrap, cls, field, label) => {
+      const v = num(row[field]);
+      if (v == null || (v === 0 && cls !== 'd' && cls !== 'r')) return;
+      const item = make('span', 'ed-cnum');
+      item.append(cls ? make('span', 'ed-chip ed-p-' + cls, label) : make('span', 'ed-ctag', label));
+      item.append(mark(make('b', '', int(v)), 'chambers', field, where));
+      wrap.append(item);
+    };
+    const bar = (d, i, g, r) => {
+      const vals = { d: num(d) || 0, i: num(i) || 0, g: num(g) || 0, r: num(r) || 0 };
+      const total = vals.d + vals.i + vals.g + vals.r;
+      const b = make('div', 'ed-bar');
+      b.setAttribute('aria-hidden', 'true');
+      if (!total) return b;
+      for (const k of indWithDems ? ['d', 'i', 'g', 'r'] : ['d', 'g', 'i', 'r']) {
+        if (!vals[k]) continue;
+        const s = make('i', 'ed-seg ed-f-' + k);
+        s.style.width = (100 * vals[k] / total) + '%';
+        b.append(s);
+      }
+      b.append(make('i', 'ed-mid'));
+      return b;
+    };
+
+    const before = make('div', 'ed-crow');
+    const n1 = make('div', 'ed-cnums');
+    add(n1, 'd', 'before_d', 'D'); add(n1, 'i', 'before_i', 'I'); add(n1, 'r', 'before_r', 'R'); add(n1, '', 'vacant', 'Vacant');
+    before.append(make('div', 'ed-clabel', 'Before today'), n1, bar(row.before_d, row.before_i, row.vacant, row.before_r));
+
+    const now = make('div', 'ed-crow');
+    now.append(make('div', 'ed-clabel', 'AP tally now'));
+    const has = ['seats_r', 'seats_d', 'seats_i', 'uncalled'].some((f) => num(row[f]) != null);
+    if (!has) {
+      now.append(make('p', 'ed-muted', 'No seats called yet.'));
+    } else {
+      const n2 = make('div', 'ed-cnums');
+      add(n2, 'd', 'seats_d', 'D'); add(n2, 'i', 'seats_i', 'I'); add(n2, 'r', 'seats_r', 'R'); add(n2, '', 'uncalled', 'Uncalled');
+      now.append(n2, bar(row.seats_d, row.seats_i, row.uncalled, row.seats_r));
+      if (row.tally_source) {
+        const src = make('p', 'ed-src');
+        src.append('Source: ', mark(link(row.tally_url, row.tally_source), 'chambers', 'tally_source', where));
+        if (row.tally_as_of) src.append(', ' + when(row.tally_as_of));
+        now.append(src);
+      }
+    }
+    box.append(before, now);
+    if (row.control) box.append(mark(make('p', 'ed-control', row.control), 'chambers', 'control', where));
+  });
+
+  dash.draw('race', (box) => {
+    if (!ready(box, 'races', 'candidates')) return;
+    const id = box.dataset.race;
+    const race = dash.data('races').data.find((r) => r.race_id === id);
+    if (!race) { box.textContent = '—'; return; }
+    const cands = dash.data('candidates').data.filter((c) => c.race_id === id);
+    const counted = cands.some((c) => num(c.pct) != null);
+    cands.sort((a, b) => counted ? (num(b.pct) ?? -1) - (num(a.pct) ?? -1) : (num(a.order) ?? 0) - (num(b.order) ?? 0));
+    const called = race.status === 'called';
+    const rw = 'race_id=' + enc(id);
+
+    const list = make('ul', 'ed-cands');
+    for (const c of cands) {
+      const where = 'cand_id=' + enc(c.cand_id);
+      const li = make('li', 'ed-cand');
+      const top = make('div', 'ed-ctop');
+      if (c.party) top.append(mark(make('span', 'ed-chip ed-p-' + (PARTY[c.party] || 'o'), c.party), 'candidates', 'party', where));
+      top.append(mark(make('span', 'ed-name', c.name), 'candidates', 'name', where));
+      if (c.incumbent === true) top.append(make('span', 'ed-inc', 'incumbent'));
+      if (called && race.winner && race.winner === c.name) top.append(make('span', 'ed-check', '✓ Called'));
+      const p = num(c.pct);
+      if (p != null) top.append(mark(make('span', 'ed-pct', pct(p)), 'candidates', 'pct', where));
+      li.append(top);
+      if (p != null) {
+        const vb = make('div', 'ed-vbar');
+        vb.setAttribute('aria-hidden', 'true');
+        const fill = make('i', 'ed-f-' + (c.party ? (PARTY[c.party] || 'o') : (c.name === 'Yes' ? 'yes' : 'no')));
+        fill.style.width = Math.max(0, Math.min(100, p * 100)) + '%';
+        vb.append(fill);
+        li.append(vb);
+      }
+      const v = num(c.votes);
+      if (v != null) {
+        const line = make('div', 'ed-vline');
+        line.append(mark(make('span', '', int(v)), 'candidates', 'votes', where), ' votes');
+        li.append(line);
+      }
+      list.append(li);
+    }
+
+    const st = make('p', 'ed-status ed-s-' + (race.status || 'waiting'));
+    if (called) {
+      st.append('Called by ', mark(make('span', '', race.called_by || 'a decision desk'), 'races', 'called_by', rw), ' for ', mark(make('span', '', race.winner), 'races', 'winner', rw));
+      if (race.called_at) st.append(', ' + when(race.called_at));
+    } else if (race.status === 'counting') {
+      const pi = num(race.pct_in);
+      if (pi != null) st.append(mark(make('span', '', pct(pi)), 'races', 'pct_in', rw), ' of expected vote counted. Not called.');
+      else st.append('Votes are being counted. Not called.');
+    } else {
+      st.append('No votes counted yet.');
+    }
+    box.append(list, st);
+
+    if (race.source) {
+      const src = make('p', 'ed-src');
+      src.append('Source: ', mark(link(race.source_url, race.source), 'races', 'source', rw));
+      if (race.as_of) src.append(', ' + when(race.as_of));
+      box.append(src);
+    }
+  });
+
+  dash.draw('feed', (ol) => {
+    const U = dash.data('updates');
+    ol.replaceChildren();
+    if (U.status === 'error') { const li = make('li', 'ed-item'); li.append(failLine()); ol.append(li); return; }
+    if (U.status !== 'ok') return;
+    const rows = [...U.data].sort((a, b) => (Date.parse(b.at) || 0) - (Date.parse(a.at) || 0)).slice(0, 40);
+    if (!rows.length) { ol.append(make('li', 'ed-item ed-muted', 'No updates yet.')); return; }
+    for (const u of rows) {
+      const li = make('li', 'ed-item');
+      li.append(make('time', 'ed-when', when(u.at)), make('p', 'ed-text', u.text));
+      if (u.source) { const s = make('p', 'ed-src'); s.append(link(u.url, u.source)); li.append(s); }
+      ol.append(li);
+    }
+  });
+
+  for (const b of document.querySelectorAll('[data-refresh]')) {
+    b.addEventListener('click', () => { for (const id of ['status', 'chambers', 'races', 'candidates', 'updates']) dash.refresh(id); });
+  }
+  for (const b of document.querySelectorAll('[data-go]')) {
+    b.addEventListener('click', () => {
+      const target = document.getElementById(b.dataset.go);
+      if (!target) return;
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      dash.setLink(target.id);
+    });
+  }
+})();
+</script>
+<script>dash.start();</script>
+</body>
+</html>
