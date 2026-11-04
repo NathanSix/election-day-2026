@@ -286,7 +286,7 @@
   "party": "D",
   "incumbent": false,
   "votes": null,
-  "pct": null,
+  "pct": 0.481,
   "order": 1
  },
  {
@@ -296,7 +296,7 @@
   "party": "R",
   "incumbent": true,
   "votes": null,
-  "pct": null,
+  "pct": 0.48,
   "order": 2
  },
  {

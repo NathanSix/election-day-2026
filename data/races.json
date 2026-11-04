@@ -245,14 +245,14 @@
   "note": "Held by Republicans",
   "national": true,
   "order": 21,
-  "status": "waiting",
+  "status": "counting",
   "pct_in": null,
   "winner": "",
   "called_by": "",
   "called_at": "",
-  "source": "",
-  "source_url": "",
-  "as_of": ""
+  "source": "KTOO",
+  "source_url": "https://www.ktoo.org/2026/11/03/sullivan-and-peltola-locked-in-tight-u-s-senate-race-as-more-results-come-in/",
+  "as_of": "2026-11-04T07:03:00Z"
  },
  {
   "race_id": "sen-ia",
@@ -347,14 +347,14 @@
   "note": "Held by Republicans",
   "national": true,
   "order": 28,
-  "status": "waiting",
+  "status": "counting",
   "pct_in": null,
   "winner": "",
   "called_by": "",
   "called_at": "",
-  "source": "",
-  "source_url": "",
-  "as_of": ""
+  "source": "Nebraska Public Media",
+  "source_url": "https://nebraskapublicmedia.org/en/news/news-articles/here-are-the-results-from-nebraskas-us-senate-race/",
+  "as_of": "2026-11-04T07:28:53Z"
  },
  {
   "race_id": "sen-nh",
