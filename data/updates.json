@@ -1,107 +1,142 @@
 [
- {
-  "id": "u1793762730779",
-  "at": "2026-11-04T03:25:30Z",
-  "text": "AP projected Democrat Keisha Lance Bottoms the winner of Georgia's governor race; FOX 5 Atlanta reported the AP call at 9:24 PM ET.",
-  "source": "AP via FOX 5 Atlanta",
-  "url": "https://www.fox5atlanta.com/news/bottoms-wins-georgia-governor-race-after-jackson-concedes"
- },
- {
-  "id": "u1793759346516",
-  "at": "2026-11-04T02:29:06Z",
-  "text": "NBC News projected Democrat Keisha Lance Bottoms the winner of Georgia's governor race shortly after 9:15 PM ET.",
-  "source": "NBC News; call time per Washington Examiner",
-  "url": "https://www.nbcnews.com/politics/2026-election/keisha-lance-bottoms-georgia-governor-win-democrats-flip-jackson-rcna603348"
- },
- {
-  "id": "u1793759345516",
-  "at": "2026-11-04T02:29:05Z",
-  "text": "AP called New Hampshire's U.S. Senate race for Democrat Chris Pappas; AP's report of the call was published at 8:25 PM ET.",
-  "source": "AP via WAFB",
-  "url": "https://www.wafb.com/2026/11/04/dem-chris-pappas-wins-senate-seat-new-hampshire-becomes-first-openly-gay-male-senator/"
- },
- {
-  "id": "u1793759344516",
-  "at": "2026-11-04T02:29:04Z",
-  "text": "AP called North Carolina's U.S. Senate race for Democrat Roy Cooper at 8:23 PM ET.",
-  "source": "AP via WITN",
-  "url": "https://www.witn.com/2026/11/04/ap-projects-roy-cooper-win-north-carolinas-us-senate-race/"
- },
- {
-  "id": "u1793755701430",
-  "at": "2026-11-04T01:28:21Z",
-  "text": "AP called Georgia's U.S. Senate race for Democratic Sen. Jon Ossoff at 7:55 PM ET.",
-  "source": "AP via FOX 5 Atlanta",
-  "url": "https://www.fox5atlanta.com/news/george-us-senate-jon-ossoff-mike-collins"
- },
- {
-  "id": "u1793755700430",
-  "at": "2026-11-04T01:28:20Z",
-  "text": "Republican John E. Sununu conceded New Hampshire's U.S. Senate race to Democrat Chris Pappas by 8:15 PM ET, the Boston Globe reports.",
-  "source": "Boston Globe",
-  "url": "https://www.bostonglobe.com/2026/11/03/metro/new-hampshire-election-pappas-shaheen-goodlander-ayotte/"
- },
- {
-  "id": "u1793755699430",
-  "at": "2026-11-04T01:28:19Z",
-  "text": "Georgia's first returns are in: ABC News showed 44% of the expected vote counted in the U.S. Senate race as of 7:59 PM ET.",
-  "source": "ABC News",
-  "url": "https://abcnews.com/Politics/live-updates/midterm-elections-live-updates/?id=137782085&entryId=137822548"
- },
- {
-  "id": "u1793751902028",
-  "at": "2026-11-04T00:25:02Z",
-  "text": "Secretary of State Brad Raffensperger said he expects Georgia's early-vote results to be uploaded by 8 p.m. ET tonight.",
-  "source": "Georgia Secretary of State via ABC News",
-  "url": "https://abcnews.com/Politics/live-updates/midterm-elections-live-updates/?id=137782085&entryId=137815288"
- },
- {
-  "id": "u1793726142879",
-  "at": "2026-11-03T17:15:42Z",
-  "text": "At 10 a.m. ET, Secretary of State Brad Raffensperger said more than 300,000 Georgians had voted so far today; his office expects over 1 million by day's end.",
-  "source": "Georgia Secretary of State via WTOC",
-  "url": "https://www.wtoc.com/2026/11/03/watch-live-state-officials-give-update-election-day-voting-continues/"
- },
- {
-  "id": "u1793726141879",
-  "at": "2026-11-03T17:15:41Z",
-  "text": "Fulton County will re-scan about 1,000 early-voting ballots from two scanners taken out of service; Raffensperger said this won't delay any race results.",
-  "source": "WTOC",
-  "url": "https://www.wtoc.com/2026/11/03/watch-live-state-officials-give-update-election-day-voting-continues/"
- },
- {
-  "id": "u1793705880000",
-  "at": "2026-11-03T11:38:00Z",
-  "text": "Georgia polls are open from 7 AM to 7 PM ET. Anyone in line at 7 PM can still vote.",
-  "source": "Georgia Secretary of State",
-  "url": "https://sos.ga.gov/how-to-guide/how-guide-voting"
- },
- {
-  "id": "u1793705879000",
-  "at": "2026-11-03T11:37:59Z",
-  "text": "AP will declare winners in Georgia's Senate, governor and other statewide races, plus all three constitutional amendments.",
-  "source": "AP via AJC",
-  "url": "https://www.ajc.com/news/2026/10/ap-decision-notes-what-to-expect-in-georgia-on-election-day/"
- },
- {
-  "id": "u1793705878000",
-  "at": "2026-11-03T11:37:58Z",
-  "text": "On Oct. 27, Georgia's Secretary of State said he expects results to be clear before midnight tonight.",
-  "source": "WRDW",
-  "url": "https://www.wrdw.com/2026/10/27/those-days-are-done-ga-elections-chief-says-delayed-results/"
- },
- {
-  "id": "u1793705877000",
-  "at": "2026-11-03T11:37:57Z",
-  "text": "No Libertarians made Georgia's statewide ballot, so each statewide race has two candidates and a December runoff is unlikely.",
-  "source": "AJC",
-  "url": "https://www.ajc.com/politics/2026/07/libertarians-wont-be-on-the-ballot-in-georgia-meaning-likely-no-runoffs/"
- },
- {
-  "id": "u1793705876000",
-  "at": "2026-11-03T11:37:56Z",
-  "text": "Georgia passed its 2022 midterm early-voting record: 2,294,275 in-person early votes as of Oct. 29, with one day left.",
-  "source": "Georgia Secretary of State",
-  "url": "https://sos.ga.gov/news/early-voting-passes-2022-midterm-record-one-day-left"
- }
+  {
+    "id": "u1793766461000",
+    "at": "2026-11-04T04:27:41Z",
+    "text": "AP called Ohio's U.S. Senate special election for Democrat Sherrod Brown over Republican Sen. Jon Husted, KSHB reported at 11:13 PM ET.",
+    "source": "AP via KSHB",
+    "url": "https://www.kshb.com/politics/america-votes/democrat-sherrod-brown-defeats-gops-jon-husted-in-ohio-senate-race"
+  },
+  {
+    "id": "u1793766460000",
+    "at": "2026-11-04T04:27:40Z",
+    "text": "AP called Texas's U.S. Senate race for Democrat James Talarico over Republican Ken Paxton, NewsChannel 5 reported at 11:05 PM ET.",
+    "source": "AP via NewsChannel 5",
+    "url": "https://www.newschannel5.com/politics/america-votes/democrat-james-talarico-to-flip-texas-senate-seat-in-historic-upset"
+  },
+  {
+    "id": "u1793766459000",
+    "at": "2026-11-04T04:27:39Z",
+    "text": "Decision Desk HQ projected that Democrats will win control of the U.S. House, Bloomberg reported.",
+    "source": "Decision Desk HQ via Bloomberg",
+    "url": "https://www.bloomberg.com/news/articles/2026-11-04/democrats-win-control-of-the-house-ddhq-projects"
+  },
+  {
+    "id": "u1793766458000",
+    "at": "2026-11-04T04:27:38Z",
+    "text": "AP called Georgia's lieutenant governor race for Democrat Josh McLaurin, WSB-TV reported at 10:47 PM ET.",
+    "source": "AP via WSB-TV",
+    "url": "https://www.wsbtv.com/news/local/atlanta/democrat-josh-mclaurin-wins-georgia-lieutenant-governors-race/2VGATUP4KNESBODUJ3XZTM5TAA/"
+  },
+  {
+    "id": "u1793766457000",
+    "at": "2026-11-04T04:27:37Z",
+    "text": "AP reported that Democrat Penny Brown Reynolds won Georgia's secretary of state race; AP's report was published at 10:40 PM ET.",
+    "source": "AP via Yahoo News",
+    "url": "https://www.yahoo.com/news/politics/articles/democrat-penny-reynolds-wins-election-034031185.html"
+  },
+  {
+    "id": "u1793762730779",
+    "at": "2026-11-04T03:25:30Z",
+    "text": "AP projected Democrat Keisha Lance Bottoms the winner of Georgia's governor race; FOX 5 Atlanta reported the AP call at 9:24 PM ET.",
+    "source": "AP via FOX 5 Atlanta",
+    "url": "https://www.fox5atlanta.com/news/bottoms-wins-georgia-governor-race-after-jackson-concedes"
+  },
+  {
+    "id": "u1793759346516",
+    "at": "2026-11-04T02:29:06Z",
+    "text": "NBC News projected Democrat Keisha Lance Bottoms the winner of Georgia's governor race shortly after 9:15 PM ET.",
+    "source": "NBC News; call time per Washington Examiner",
+    "url": "https://www.nbcnews.com/politics/2026-election/keisha-lance-bottoms-georgia-governor-win-democrats-flip-jackson-rcna603348"
+  },
+  {
+    "id": "u1793759345516",
+    "at": "2026-11-04T02:29:05Z",
+    "text": "AP called New Hampshire's U.S. Senate race for Democrat Chris Pappas; AP's report of the call was published at 8:25 PM ET.",
+    "source": "AP via WAFB",
+    "url": "https://www.wafb.com/2026/11/04/dem-chris-pappas-wins-senate-seat-new-hampshire-becomes-first-openly-gay-male-senator/"
+  },
+  {
+    "id": "u1793759344516",
+    "at": "2026-11-04T02:29:04Z",
+    "text": "AP called North Carolina's U.S. Senate race for Democrat Roy Cooper at 8:23 PM ET.",
+    "source": "AP via WITN",
+    "url": "https://www.witn.com/2026/11/04/ap-projects-roy-cooper-win-north-carolinas-us-senate-race/"
+  },
+  {
+    "id": "u1793755701430",
+    "at": "2026-11-04T01:28:21Z",
+    "text": "AP called Georgia's U.S. Senate race for Democratic Sen. Jon Ossoff at 7:55 PM ET.",
+    "source": "AP via FOX 5 Atlanta",
+    "url": "https://www.fox5atlanta.com/news/george-us-senate-jon-ossoff-mike-collins"
+  },
+  {
+    "id": "u1793755700430",
+    "at": "2026-11-04T01:28:20Z",
+    "text": "Republican John E. Sununu conceded New Hampshire's U.S. Senate race to Democrat Chris Pappas by 8:15 PM ET, the Boston Globe reports.",
+    "source": "Boston Globe",
+    "url": "https://www.bostonglobe.com/2026/11/03/metro/new-hampshire-election-pappas-shaheen-goodlander-ayotte/"
+  },
+  {
+    "id": "u1793755699430",
+    "at": "2026-11-04T01:28:19Z",
+    "text": "Georgia's first returns are in: ABC News showed 44% of the expected vote counted in the U.S. Senate race as of 7:59 PM ET.",
+    "source": "ABC News",
+    "url": "https://abcnews.com/Politics/live-updates/midterm-elections-live-updates/?id=137782085&entryId=137822548"
+  },
+  {
+    "id": "u1793751902028",
+    "at": "2026-11-04T00:25:02Z",
+    "text": "Secretary of State Brad Raffensperger said he expects Georgia's early-vote results to be uploaded by 8 p.m. ET tonight.",
+    "source": "Georgia Secretary of State via ABC News",
+    "url": "https://abcnews.com/Politics/live-updates/midterm-elections-live-updates/?id=137782085&entryId=137815288"
+  },
+  {
+    "id": "u1793726142879",
+    "at": "2026-11-03T17:15:42Z",
+    "text": "At 10 a.m. ET, Secretary of State Brad Raffensperger said more than 300,000 Georgians had voted so far today; his office expects over 1 million by day's end.",
+    "source": "Georgia Secretary of State via WTOC",
+    "url": "https://www.wtoc.com/2026/11/03/watch-live-state-officials-give-update-election-day-voting-continues/"
+  },
+  {
+    "id": "u1793726141879",
+    "at": "2026-11-03T17:15:41Z",
+    "text": "Fulton County will re-scan about 1,000 early-voting ballots from two scanners taken out of service; Raffensperger said this won't delay any race results.",
+    "source": "WTOC",
+    "url": "https://www.wtoc.com/2026/11/03/watch-live-state-officials-give-update-election-day-voting-continues/"
+  },
+  {
+    "id": "u1793705880000",
+    "at": "2026-11-03T11:38:00Z",
+    "text": "Georgia polls are open from 7 AM to 7 PM ET. Anyone in line at 7 PM can still vote.",
+    "source": "Georgia Secretary of State",
+    "url": "https://sos.ga.gov/how-to-guide/how-guide-voting"
+  },
+  {
+    "id": "u1793705879000",
+    "at": "2026-11-03T11:37:59Z",
+    "text": "AP will declare winners in Georgia's Senate, governor and other statewide races, plus all three constitutional amendments.",
+    "source": "AP via AJC",
+    "url": "https://www.ajc.com/news/2026/10/ap-decision-notes-what-to-expect-in-georgia-on-election-day/"
+  },
+  {
+    "id": "u1793705878000",
+    "at": "2026-11-03T11:37:58Z",
+    "text": "On Oct. 27, Georgia's Secretary of State said he expects results to be clear before midnight tonight.",
+    "source": "WRDW",
+    "url": "https://www.wrdw.com/2026/10/27/those-days-are-done-ga-elections-chief-says-delayed-results/"
+  },
+  {
+    "id": "u1793705877000",
+    "at": "2026-11-03T11:37:57Z",
+    "text": "No Libertarians made Georgia's statewide ballot, so each statewide race has two candidates and a December runoff is unlikely.",
+    "source": "AJC",
+    "url": "https://www.ajc.com/politics/2026/07/libertarians-wont-be-on-the-ballot-in-georgia-meaning-likely-no-runoffs/"
+  },
+  {
+    "id": "u1793705876000",
+    "at": "2026-11-03T11:37:56Z",
+    "text": "Georgia passed its 2022 midterm early-voting record: 2,294,275 in-person early votes as of Oct. 29, with one day left.",
+    "source": "Georgia Secretary of State",
+    "url": "https://sos.ga.gov/news/early-voting-passes-2022-midterm-record-one-day-left"
+  }
 ]
