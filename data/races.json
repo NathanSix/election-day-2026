@@ -160,14 +160,14 @@
   "note": "",
   "national": false,
   "order": 10,
-  "status": "counting",
+  "status": "called",
   "pct_in": null,
-  "winner": "",
-  "called_by": "",
-  "called_at": "",
-  "source": "Atlanta News First",
-  "source_url": "https://www.atlantanewsfirst.com/2026/11/04/tanya-miller-elected-georgia-attorney-general-defeats-brian-strickland/",
-  "as_of": "2026-11-04T03:55:00Z"
+  "winner": "Peter Hubbard",
+  "called_by": "AP",
+  "called_at": "2026-11-04T03:38:00Z",
+  "source": "AP via FOX 5 Atlanta",
+  "source_url": "https://www.fox5atlanta.com/news/map-georgia-public-service-commission-election-results-ap",
+  "as_of": "2026-11-04T10:00:00Z"
  },
  {
   "race_id": "ga-psc5",
@@ -177,14 +177,14 @@
   "note": "",
   "national": false,
   "order": 11,
-  "status": "counting",
+  "status": "called",
   "pct_in": null,
-  "winner": "",
-  "called_by": "",
-  "called_at": "",
-  "source": "Atlanta News First",
-  "source_url": "https://www.atlantanewsfirst.com/2026/11/04/tanya-miller-elected-georgia-attorney-general-defeats-brian-strickland/",
-  "as_of": "2026-11-04T03:55:00Z"
+  "winner": "Shelia Edwards",
+  "called_by": "AP",
+  "called_at": "2026-11-04T03:54:00Z",
+  "source": "AP via FOX 5 Atlanta",
+  "source_url": "https://www.fox5atlanta.com/news/map-georgia-public-service-commission-election-results-ap",
+  "as_of": "2026-11-04T10:00:00Z"
  },
  {
   "race_id": "ga-am1",
