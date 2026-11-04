@@ -194,14 +194,14 @@
   "note": "Conservation-use land acreage limit",
   "national": false,
   "order": 12,
-  "status": "counting",
+  "status": "called",
   "pct_in": 0.32,
-  "winner": "",
-  "called_by": "",
-  "called_at": "",
-  "source": "WRDW",
-  "source_url": "https://www.wrdw.com/2026/11/04/ga-voters-issue-their-verdicts-3-constitutional-amendments/",
-  "as_of": "2026-11-04T00:57:18Z"
+  "winner": "Yes",
+  "called_by": "AP",
+  "called_at": "2026-11-04T13:24:05Z",
+  "source": "AP via FOX 5 Atlanta (call); WRDW (votes)",
+  "source_url": "https://www.fox5atlanta.com/news/map-georgia-constitutional-amendments-election-results-ap",
+  "as_of": "2026-11-04T06:46:11Z"
  },
  {
   "race_id": "ga-am2",
@@ -251,8 +251,8 @@
   "called_by": "",
   "called_at": "",
   "source": "KTOO",
-  "source_url": "https://www.ktoo.org/2026/11/03/sullivan-and-peltola-locked-in-tight-u-s-senate-race-as-more-results-come-in/",
-  "as_of": "2026-11-04T07:03:00Z"
+  "source_url": "https://www.ktoo.org/2026/11/03/sullivan-and-peltola-locked-in-tight-u-s-senate-race-as-more-results-come-in-2/",
+  "as_of": "2026-11-04T09:16:00Z"
  },
  {
   "race_id": "sen-ia",
@@ -313,14 +313,14 @@
   "note": "Open seat, held by Democrats",
   "national": true,
   "order": 26,
-  "status": "counting",
+  "status": "called",
   "pct_in": null,
-  "winner": "",
-  "called_by": "",
-  "called_at": "",
-  "source": "The Detroit News",
-  "source_url": "https://www.detroitnews.com/story/news/politics/elections/2026/11/03/michigan-senate-election-results-abdul-el-sayed-mike-rogers/92466965007/",
-  "as_of": "2026-11-04T04:27:41Z"
+  "winner": "Abdul El-Sayed",
+  "called_by": "AP",
+  "called_at": "2026-11-04T13:24:05Z",
+  "source": "AP via ClickOnDetroit (WDIV)",
+  "source_url": "https://www.clickondetroit.com/news/local/2026/11/04/abdul-el-sayed-wins-michigan-u-s-senate-race-ap-projects/",
+  "as_of": "2026-11-04T13:24:05Z"
  },
  {
   "race_id": "sen-mn",
