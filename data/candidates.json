@@ -1,502 +1,502 @@
 [
-  {
-    "cand_id": "ga-sen-collins",
-    "race_id": "ga-sen",
-    "name": "Mike Collins",
-    "party": "R",
-    "incumbent": false,
-    "votes": 674005,
-    "pct": 0.34,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-sen-ossoff",
-    "race_id": "ga-sen",
-    "name": "Jon Ossoff",
-    "party": "D",
-    "incumbent": true,
-    "votes": 1290144,
-    "pct": 0.66,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-gov-bottoms",
-    "race_id": "ga-gov",
-    "name": "Keisha Lance Bottoms",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-gov-jackson",
-    "race_id": "ga-gov",
-    "name": "Rick Jackson",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-ltgov-dolezal",
-    "race_id": "ga-ltgov",
-    "name": "Greg Dolezal",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-ltgov-mclaurin",
-    "race_id": "ga-ltgov",
-    "name": "Josh McLaurin",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": 0.56,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-sos-fleming",
-    "race_id": "ga-sos",
-    "name": "Tim Fleming",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-sos-reynolds",
-    "race_id": "ga-sos",
-    "name": "Penny Brown Reynolds",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-ag-miller",
-    "race_id": "ga-ag",
-    "name": "Tanya Miller",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-ag-strickland",
-    "race_id": "ga-ag",
-    "name": "Brian Strickland",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-agr-harper",
-    "race_id": "ga-agr",
-    "name": "Tyler Harper",
-    "party": "R",
-    "incumbent": true,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-agr-juhan-arnold",
-    "race_id": "ga-agr",
-    "name": "Katherine Juhan-Arnold",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-ins-king",
-    "race_id": "ga-ins",
-    "name": "John King",
-    "party": "R",
-    "incumbent": true,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-ins-waites",
-    "race_id": "ga-ins",
-    "name": "Keisha Waites",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-lab-porcher",
-    "race_id": "ga-lab",
-    "name": "Nikki Porcher",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-lab-rivera-holmes",
-    "race_id": "ga-lab",
-    "name": "Bárbara Rivera Holmes",
-    "party": "R",
-    "incumbent": true,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-sch-powell",
-    "race_id": "ga-sch",
-    "name": "Lydia Powell",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-sch-woods",
-    "race_id": "ga-sch",
-    "name": "Richard Woods",
-    "party": "R",
-    "incumbent": true,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-psc3-hubbard",
-    "race_id": "ga-psc3",
-    "name": "Peter Hubbard",
-    "party": "D",
-    "incumbent": true,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-psc3-johnson",
-    "race_id": "ga-psc3",
-    "name": "Fitz Johnson",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-psc5-edwards",
-    "race_id": "ga-psc5",
-    "name": "Shelia Edwards",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-psc5-tolbert",
-    "race_id": "ga-psc5",
-    "name": "Joshua Tolbert",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-am1-yes",
-    "race_id": "ga-am1",
-    "name": "Yes",
-    "party": "",
-    "incumbent": false,
-    "votes": 758253,
-    "pct": 0.529,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-am1-no",
-    "race_id": "ga-am1",
-    "name": "No",
-    "party": "",
-    "incumbent": false,
-    "votes": 676391,
-    "pct": 0.471,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-am2-yes",
-    "race_id": "ga-am2",
-    "name": "Yes",
-    "party": "",
-    "incumbent": false,
-    "votes": 966105,
-    "pct": 0.671,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-am2-no",
-    "race_id": "ga-am2",
-    "name": "No",
-    "party": "",
-    "incumbent": false,
-    "votes": 472960,
-    "pct": 0.329,
-    "order": 2
-  },
-  {
-    "cand_id": "ga-am3-yes",
-    "race_id": "ga-am3",
-    "name": "Yes",
-    "party": "",
-    "incumbent": false,
-    "votes": 1123804,
-    "pct": 0.78,
-    "order": 1
-  },
-  {
-    "cand_id": "ga-am3-no",
-    "race_id": "ga-am3",
-    "name": "No",
-    "party": "",
-    "incumbent": false,
-    "votes": 318725,
-    "pct": 0.22,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-ak-peltola",
-    "race_id": "sen-ak",
-    "name": "Mary Peltola",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-ak-sullivan",
-    "race_id": "sen-ak",
-    "name": "Dan Sullivan",
-    "party": "R",
-    "incumbent": true,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-ia-hinson",
-    "race_id": "sen-ia",
-    "name": "Ashley Hinson",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-ia-turek",
-    "race_id": "sen-ia",
-    "name": "Josh Turek",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-ks-hamilton",
-    "race_id": "sen-ks",
-    "name": "Adam Hamilton",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-ks-marshall",
-    "race_id": "sen-ks",
-    "name": "Roger Marshall",
-    "party": "R",
-    "incumbent": true,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-me-collins",
-    "race_id": "sen-me",
-    "name": "Susan Collins",
-    "party": "R",
-    "incumbent": true,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-me-jackson",
-    "race_id": "sen-me",
-    "name": "Troy Jackson",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-mi-el-sayed",
-    "race_id": "sen-mi",
-    "name": "Abdul El-Sayed",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-mi-rogers",
-    "race_id": "sen-mi",
-    "name": "Mike Rogers",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-mn-flanagan",
-    "race_id": "sen-mn",
-    "name": "Peggy Flanagan",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-mn-tafoya",
-    "race_id": "sen-mn",
-    "name": "Michele Tafoya",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-ne-osborn",
-    "race_id": "sen-ne",
-    "name": "Dan Osborn",
-    "party": "I",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-ne-ricketts",
-    "race_id": "sen-ne",
-    "name": "Pete Ricketts",
-    "party": "R",
-    "incumbent": true,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-nh-pappas",
-    "race_id": "sen-nh",
-    "name": "Chris Pappas",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-nh-sununu",
-    "race_id": "sen-nh",
-    "name": "John E. Sununu",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-nc-cooper",
-    "race_id": "sen-nc",
-    "name": "Roy Cooper",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": 0.668,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-nc-whatley",
-    "race_id": "sen-nc",
-    "name": "Michael Whatley",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": 0.316,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-oh-brown",
-    "race_id": "sen-oh",
-    "name": "Sherrod Brown",
-    "party": "D",
-    "incumbent": false,
-    "votes": 750385,
-    "pct": 0.62,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-oh-husted",
-    "race_id": "sen-oh",
-    "name": "Jon Husted",
-    "party": "R",
-    "incumbent": true,
-    "votes": 427159,
-    "pct": 0.35,
-    "order": 2
-  },
-  {
-    "cand_id": "sen-tx-paxton",
-    "race_id": "sen-tx",
-    "name": "Ken Paxton",
-    "party": "R",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 1
-  },
-  {
-    "cand_id": "sen-tx-talarico",
-    "race_id": "sen-tx",
-    "name": "James Talarico",
-    "party": "D",
-    "incumbent": false,
-    "votes": null,
-    "pct": null,
-    "order": 2
-  }
+ {
+  "cand_id": "ga-sen-collins",
+  "race_id": "ga-sen",
+  "name": "Mike Collins",
+  "party": "R",
+  "incumbent": false,
+  "votes": 674005,
+  "pct": 0.34,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-sen-ossoff",
+  "race_id": "ga-sen",
+  "name": "Jon Ossoff",
+  "party": "D",
+  "incumbent": true,
+  "votes": 1290144,
+  "pct": 0.66,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-gov-bottoms",
+  "race_id": "ga-gov",
+  "name": "Keisha Lance Bottoms",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-gov-jackson",
+  "race_id": "ga-gov",
+  "name": "Rick Jackson",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-ltgov-dolezal",
+  "race_id": "ga-ltgov",
+  "name": "Greg Dolezal",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-ltgov-mclaurin",
+  "race_id": "ga-ltgov",
+  "name": "Josh McLaurin",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": 0.56,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-sos-fleming",
+  "race_id": "ga-sos",
+  "name": "Tim Fleming",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-sos-reynolds",
+  "race_id": "ga-sos",
+  "name": "Penny Brown Reynolds",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-ag-miller",
+  "race_id": "ga-ag",
+  "name": "Tanya Miller",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-ag-strickland",
+  "race_id": "ga-ag",
+  "name": "Brian Strickland",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-agr-harper",
+  "race_id": "ga-agr",
+  "name": "Tyler Harper",
+  "party": "R",
+  "incumbent": true,
+  "votes": 352315,
+  "pct": 0.383,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-agr-juhan-arnold",
+  "race_id": "ga-agr",
+  "name": "Katherine Juhan-Arnold",
+  "party": "D",
+  "incumbent": false,
+  "votes": 567172,
+  "pct": 0.617,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-ins-king",
+  "race_id": "ga-ins",
+  "name": "John King",
+  "party": "R",
+  "incumbent": true,
+  "votes": 349168,
+  "pct": 0.38,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-ins-waites",
+  "race_id": "ga-ins",
+  "name": "Keisha Waites",
+  "party": "D",
+  "incumbent": false,
+  "votes": 569507,
+  "pct": 0.62,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-lab-porcher",
+  "race_id": "ga-lab",
+  "name": "Nikki Porcher",
+  "party": "D",
+  "incumbent": false,
+  "votes": 573435,
+  "pct": 0.625,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-lab-rivera-holmes",
+  "race_id": "ga-lab",
+  "name": "Bárbara Rivera Holmes",
+  "party": "R",
+  "incumbent": true,
+  "votes": 344172,
+  "pct": 0.375,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-sch-powell",
+  "race_id": "ga-sch",
+  "name": "Lydia Powell",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-sch-woods",
+  "race_id": "ga-sch",
+  "name": "Richard Woods",
+  "party": "R",
+  "incumbent": true,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-psc3-hubbard",
+  "race_id": "ga-psc3",
+  "name": "Peter Hubbard",
+  "party": "D",
+  "incumbent": true,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-psc3-johnson",
+  "race_id": "ga-psc3",
+  "name": "Fitz Johnson",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-psc5-edwards",
+  "race_id": "ga-psc5",
+  "name": "Shelia Edwards",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-psc5-tolbert",
+  "race_id": "ga-psc5",
+  "name": "Joshua Tolbert",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-am1-yes",
+  "race_id": "ga-am1",
+  "name": "Yes",
+  "party": "",
+  "incumbent": false,
+  "votes": 758253,
+  "pct": 0.529,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-am1-no",
+  "race_id": "ga-am1",
+  "name": "No",
+  "party": "",
+  "incumbent": false,
+  "votes": 676391,
+  "pct": 0.471,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-am2-yes",
+  "race_id": "ga-am2",
+  "name": "Yes",
+  "party": "",
+  "incumbent": false,
+  "votes": 966105,
+  "pct": 0.671,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-am2-no",
+  "race_id": "ga-am2",
+  "name": "No",
+  "party": "",
+  "incumbent": false,
+  "votes": 472960,
+  "pct": 0.329,
+  "order": 2
+ },
+ {
+  "cand_id": "ga-am3-yes",
+  "race_id": "ga-am3",
+  "name": "Yes",
+  "party": "",
+  "incumbent": false,
+  "votes": 1123804,
+  "pct": 0.78,
+  "order": 1
+ },
+ {
+  "cand_id": "ga-am3-no",
+  "race_id": "ga-am3",
+  "name": "No",
+  "party": "",
+  "incumbent": false,
+  "votes": 318725,
+  "pct": 0.22,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-ak-peltola",
+  "race_id": "sen-ak",
+  "name": "Mary Peltola",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-ak-sullivan",
+  "race_id": "sen-ak",
+  "name": "Dan Sullivan",
+  "party": "R",
+  "incumbent": true,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-ia-hinson",
+  "race_id": "sen-ia",
+  "name": "Ashley Hinson",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-ia-turek",
+  "race_id": "sen-ia",
+  "name": "Josh Turek",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-ks-hamilton",
+  "race_id": "sen-ks",
+  "name": "Adam Hamilton",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-ks-marshall",
+  "race_id": "sen-ks",
+  "name": "Roger Marshall",
+  "party": "R",
+  "incumbent": true,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-me-collins",
+  "race_id": "sen-me",
+  "name": "Susan Collins",
+  "party": "R",
+  "incumbent": true,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-me-jackson",
+  "race_id": "sen-me",
+  "name": "Troy Jackson",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-mi-el-sayed",
+  "race_id": "sen-mi",
+  "name": "Abdul El-Sayed",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-mi-rogers",
+  "race_id": "sen-mi",
+  "name": "Mike Rogers",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-mn-flanagan",
+  "race_id": "sen-mn",
+  "name": "Peggy Flanagan",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-mn-tafoya",
+  "race_id": "sen-mn",
+  "name": "Michele Tafoya",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-ne-osborn",
+  "race_id": "sen-ne",
+  "name": "Dan Osborn",
+  "party": "I",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-ne-ricketts",
+  "race_id": "sen-ne",
+  "name": "Pete Ricketts",
+  "party": "R",
+  "incumbent": true,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-nh-pappas",
+  "race_id": "sen-nh",
+  "name": "Chris Pappas",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-nh-sununu",
+  "race_id": "sen-nh",
+  "name": "John E. Sununu",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-nc-cooper",
+  "race_id": "sen-nc",
+  "name": "Roy Cooper",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": 0.668,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-nc-whatley",
+  "race_id": "sen-nc",
+  "name": "Michael Whatley",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": 0.316,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-oh-brown",
+  "race_id": "sen-oh",
+  "name": "Sherrod Brown",
+  "party": "D",
+  "incumbent": false,
+  "votes": 750385,
+  "pct": 0.62,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-oh-husted",
+  "race_id": "sen-oh",
+  "name": "Jon Husted",
+  "party": "R",
+  "incumbent": true,
+  "votes": 427159,
+  "pct": 0.35,
+  "order": 2
+ },
+ {
+  "cand_id": "sen-tx-paxton",
+  "race_id": "sen-tx",
+  "name": "Ken Paxton",
+  "party": "R",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 1
+ },
+ {
+  "cand_id": "sen-tx-talarico",
+  "race_id": "sen-tx",
+  "name": "James Talarico",
+  "party": "D",
+  "incumbent": false,
+  "votes": null,
+  "pct": null,
+  "order": 2
+ }
 ]
