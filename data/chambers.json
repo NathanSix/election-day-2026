@@ -6,13 +6,13 @@
   "before_i": 2,
   "vacant": 0,
   "majority": 51,
-  "seats_r": 35,
-  "seats_d": 45,
+  "seats_r": 38,
+  "seats_d": 50,
   "seats_i": null,
-  "uncalled": 20,
+  "uncalled": 12,
   "tally_source": "AP via Yahoo News",
   "tally_url": "https://www.yahoo.com/news/politics/articles/election-results-2026-balance-power-015809470.html",
-  "tally_as_of": "2026-11-04T02:20:00Z",
+  "tally_as_of": "2026-11-04T04:30:00Z",
   "control": "AP: Democrats have won control of the Senate."
  },
  {
@@ -22,13 +22,13 @@
   "before_i": 1,
   "vacant": 2,
   "majority": 218,
-  "seats_r": 36,
-  "seats_d": 73,
+  "seats_r": 95,
+  "seats_d": 152,
   "seats_i": null,
-  "uncalled": 326,
+  "uncalled": 188,
   "tally_source": "AP via Yahoo News",
   "tally_url": "https://www.yahoo.com/news/politics/articles/election-results-2026-balance-power-015809470.html",
-  "tally_as_of": "2026-11-04T02:20:00Z",
+  "tally_as_of": "2026-11-04T04:35:00Z",
   "control": ""
  }
 ]
