@@ -347,14 +347,14 @@
   "note": "Held by Republicans",
   "national": true,
   "order": 28,
-  "status": "counting",
+  "status": "called",
   "pct_in": null,
-  "winner": "",
-  "called_by": "",
-  "called_at": "",
-  "source": "Nebraska Public Media",
-  "source_url": "https://nebraskapublicmedia.org/en/news/news-articles/here-are-the-results-from-nebraskas-us-senate-race/",
-  "as_of": "2026-11-04T07:28:53Z"
+  "winner": "Pete Ricketts",
+  "called_by": "AP",
+  "called_at": "2026-11-04T08:27:00Z",
+  "source": "AP via Live 5 News",
+  "source_url": "https://www.live5news.com/2026/11/04/republican-pete-ricketts-wins-reelection-us-senate-over-independent-challenger-nebraska/",
+  "as_of": "2026-11-04T09:03:27Z"
  },
  {
   "race_id": "sen-nh",
