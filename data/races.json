@@ -7,14 +7,14 @@
   "note": "Held by Democrats",
   "national": true,
   "order": 1,
-  "status": "waiting",
-  "pct_in": null,
-  "winner": "",
-  "called_by": "",
-  "called_at": "",
-  "source": "",
-  "source_url": "",
-  "as_of": ""
+  "status": "called",
+  "pct_in": 0.44,
+  "winner": "Jon Ossoff",
+  "called_by": "AP",
+  "called_at": "2026-11-04T00:55:00Z",
+  "source": "AP via FOX 5 Atlanta (call); ABC News (votes)",
+  "source_url": "https://www.fox5atlanta.com/news/george-us-senate-jon-ossoff-mike-collins",
+  "as_of": "2026-11-04T00:59:00Z"
  },
  {
   "race_id": "ga-gov",
@@ -364,14 +364,14 @@
   "note": "Open seat, held by Democrats",
   "national": true,
   "order": 29,
-  "status": "waiting",
+  "status": "counting",
   "pct_in": null,
   "winner": "",
   "called_by": "",
   "called_at": "",
-  "source": "",
-  "source_url": "",
-  "as_of": ""
+  "source": "Boston Globe",
+  "source_url": "https://www.bostonglobe.com/2026/11/03/metro/new-hampshire-election-pappas-shaheen-goodlander-ayotte/",
+  "as_of": "2026-11-04T01:18:47Z"
  },
  {
   "race_id": "sen-nc",
@@ -398,14 +398,14 @@
   "note": "Special election, held by Republicans",
   "national": true,
   "order": 31,
-  "status": "waiting",
-  "pct_in": null,
+  "status": "counting",
+  "pct_in": 0.25,
   "winner": "",
   "called_by": "",
   "called_at": "",
-  "source": "",
-  "source_url": "",
-  "as_of": ""
+  "source": "ABC News",
+  "source_url": "https://abcnews.com/Politics/live-updates/midterm-elections-live-updates/?id=137782085&entryId=137822548",
+  "as_of": "2026-11-04T00:59:00Z"
  },
  {
   "race_id": "sen-tx",

@@ -5,8 +5,8 @@
   "name": "Mike Collins",
   "party": "R",
   "incumbent": false,
-  "votes": null,
-  "pct": null,
+  "votes": 674005,
+  "pct": 0.34,
   "order": 1
  },
  {
@@ -15,8 +15,8 @@
   "name": "Jon Ossoff",
   "party": "D",
   "incumbent": true,
-  "votes": null,
-  "pct": null,
+  "votes": 1290144,
+  "pct": 0.66,
   "order": 2
  },
  {
@@ -465,8 +465,8 @@
   "name": "Sherrod Brown",
   "party": "D",
   "incumbent": false,
-  "votes": null,
-  "pct": null,
+  "votes": 750385,
+  "pct": 0.62,
   "order": 1
  },
  {
@@ -475,8 +475,8 @@
   "name": "Jon Husted",
   "party": "R",
   "incumbent": true,
-  "votes": null,
-  "pct": null,
+  "votes": 427159,
+  "pct": 0.35,
   "order": 2
  },
  {
