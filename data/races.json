@@ -24,14 +24,14 @@
   "note": "Open seat, held by Republicans",
   "national": false,
   "order": 2,
-  "status": "waiting",
+  "status": "called",
   "pct_in": null,
-  "winner": "",
-  "called_by": "",
-  "called_at": "",
-  "source": "",
-  "source_url": "",
-  "as_of": ""
+  "winner": "Keisha Lance Bottoms",
+  "called_by": "NBC News",
+  "called_at": "2026-11-04T02:15:00Z",
+  "source": "NBC News (call); Washington Examiner (call time)",
+  "source_url": "https://www.nbcnews.com/politics/2026-election/keisha-lance-bottoms-georgia-governor-win-democrats-flip-jackson-rcna603348",
+  "as_of": "2026-11-04T02:25:06Z"
  },
  {
   "race_id": "ga-ltgov",
@@ -364,14 +364,14 @@
   "note": "Open seat, held by Democrats",
   "national": true,
   "order": 29,
-  "status": "counting",
+  "status": "called",
   "pct_in": null,
-  "winner": "",
-  "called_by": "",
-  "called_at": "",
-  "source": "Boston Globe",
-  "source_url": "https://www.bostonglobe.com/2026/11/03/metro/new-hampshire-election-pappas-shaheen-goodlander-ayotte/",
-  "as_of": "2026-11-04T01:18:47Z"
+  "winner": "Chris Pappas",
+  "called_by": "AP",
+  "called_at": "2026-11-04T01:25:38Z",
+  "source": "AP via WAFB",
+  "source_url": "https://www.wafb.com/2026/11/04/dem-chris-pappas-wins-senate-seat-new-hampshire-becomes-first-openly-gay-male-senator/",
+  "as_of": "2026-11-04T01:25:38Z"
  },
  {
   "race_id": "sen-nc",
@@ -381,14 +381,14 @@
   "note": "Open seat, held by Republicans",
   "national": true,
   "order": 30,
-  "status": "waiting",
+  "status": "called",
   "pct_in": null,
-  "winner": "",
-  "called_by": "",
-  "called_at": "",
-  "source": "",
-  "source_url": "",
-  "as_of": ""
+  "winner": "Roy Cooper",
+  "called_by": "AP",
+  "called_at": "2026-11-04T01:23:00Z",
+  "source": "AP via WITN (call); AP via WBTV (vote shares)",
+  "source_url": "https://www.witn.com/2026/11/04/ap-projects-roy-cooper-win-north-carolinas-us-senate-race/",
+  "as_of": "2026-11-04T01:23:00Z"
  },
  {
   "race_id": "sen-oh",
@@ -415,13 +415,13 @@
   "note": "Held by Republicans",
   "national": true,
   "order": 32,
-  "status": "waiting",
+  "status": "counting",
   "pct_in": null,
   "winner": "",
   "called_by": "",
   "called_at": "",
-  "source": "",
-  "source_url": "",
-  "as_of": ""
+  "source": "Houston Public Media",
+  "source_url": "https://www.houstonpublicmedia.org/articles/news/politics/election-2026/2026/11/03/565938/talarico-paxton-senate-race-texas-results/",
+  "as_of": "2026-11-04T02:29:06Z"
  }
 ]
